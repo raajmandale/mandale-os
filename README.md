@@ -1,3 +1,10 @@
+<p align="center">
+  <img src="docs/banner.svg" width="900">
+</p>
+
+# M-OS Runtime
+
+Pattern Graph Runtime for Hybrid Compute (CPU / OpenCL / AI)
 # M-OS — Pattern Based Runtime System
 
 M-OS is a **Pattern State Transition Runtime** that automatically routes workloads
@@ -15,8 +22,14 @@ Examples:
 - optimize
 
 ---
+## Quick Demo
 
-# Architecture
+Run the canonical pattern graph runtime:
+
+```bash
+python examples/demo_pattern_graph.py
+
+## Architecture
 
 ![Architecture](docs/assets/svg/mos_architecture.svg)
 
