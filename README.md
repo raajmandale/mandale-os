@@ -58,24 +58,18 @@ This enables:
 
 ---
 
-# 60-Second Quickstart
+## 60-Second Quickstart
 
-Clone repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/raajmandale/mos-runtime.git
 cd mos-runtime
-
 Install dependencies
-
 pip install -r requirements.txt
-
 Run demo
-
 python cli/mos.py run examples/graph_opt.yaml
-
-Example output
-
+Example Output
 PatternGraph loaded
 Nodes: 12
 Execution backend: CPU
@@ -94,7 +88,7 @@ Runtime: 0.42s
 Architecture
 <p align="center"> <img src="docs/assets/svg/mos_architecture.svg" width="900"> </p>
 
-M-OS runtime consists of five core layers.
+M-OS runtime consists of five core layers:
 
 Layer	Responsibility
 PatternGraph	describes computation patterns
@@ -105,18 +99,16 @@ Backend	CPU / GPU / AI compute
 Pattern Graph Example
 <p align="center"> <img src="docs/assets/svg/mos_pattern_graph.svg" width="900"> </p>
 
-Execution example
+Execution example:
 
 Transform → Search → Optimize → Simulate → Aggregate
 
-Each stage becomes a node in the PatternGraph.
-
-The runtime scheduler determines how these nodes execute.
+Each stage becomes a node in the PatternGraph, and the runtime scheduler determines how these nodes execute.
 
 Execution Flow
 <p align="center"> <img src="docs/assets/svg/mos_execution_flow.svg" width="900"> </p>
 
-Runtime pipeline
+Runtime pipeline:
 
 PatternGraph
    ↓
@@ -130,7 +122,7 @@ Backend Compute
 Execution Timeline
 <p align="center"> <img src="docs/assets/svg/mos_timeline.svg" width="900"> </p>
 
-This view shows how multiple pattern nodes are executed across time.
+This diagram illustrates how multiple pattern nodes execute across time.
 
 Project Structure
 mos-runtime
@@ -181,11 +173,11 @@ simulation engines
 
 Roadmap
 
-Current stage
+Current stage:
 
 v0 — Pattern Runtime Core
 
-Next stages
+Next stages:
 
 v1 — distributed scheduler
 v2 — GPU routing
