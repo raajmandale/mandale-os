@@ -1,0 +1,61 @@
+{
+  "name": "tri_compute_demo",
+  "description": "Offline M-OS demo graph showing transform -> search -> infer",
+  "nodes": [
+    {
+      "name": "transform_data",
+      "pattern": "transform",
+      "input": {
+        "cities": [
+          [
+            12,
+            5
+          ],
+          [
+            18,
+            22
+          ],
+          [
+            7,
+            31
+          ],
+          [
+            29,
+            16
+          ],
+          [
+            36,
+            28
+          ],
+          [
+            42,
+            7
+          ]
+        ]
+      },
+      "output": "normalized_cities"
+    },
+    {
+      "name": "search_route",
+      "pattern": "search",
+      "input": "normalized_cities",
+      "output": "candidate_route"
+    },
+    {
+      "name": "rank_results",
+      "pattern": "infer",
+      "input": "candidate_route",
+      "output": "final_report"
+    }
+  ],
+  "edges": [
+    [
+      "transform_data",
+      "search_route"
+    ],
+    [
+      "search_route",
+      "rank_results"
+    ]
+  ]
+}

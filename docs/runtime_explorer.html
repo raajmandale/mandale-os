@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>M-OS Runtime Explorer</title>
+
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+<style>
+body{
+font-family:Arial;
+background:#0b1220;
+color:white;
+margin:40px;
+}
+
+#network{
+width:100%;
+height:600px;
+border-radius:10px;
+background:#111;
+}
+
+button{
+padding:10px 20px;
+margin:10px;
+font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>M-OS Runtime Explorer</h1>
+<p>Interactive Pattern State Transition Graph</p>
+
+<div id="network"></div>
+
+<button onclick="runExecution()">Simulate Execution</button>
+
+<script>
+
+const nodes = new vis.DataSet([
+{id:1,label:"Pattern Input"},
+{id:2,label:"Search"},
+{id:3,label:"Optimize"},
+{id:4,label:"Simulate"},
+{id:5,label:"Aggregate"},
+{id:6,label:"Generate Output"}
+]);
+
+const edges = new vis.DataSet([
+{from:1,to:2},
+{from:2,to:3},
+{from:3,to:4},
+{from:4,to:5},
+{from:5,to:6}
+]);
+
+const container = document.getElementById("network");
+
+const data = {
+nodes:nodes,
+edges:edges
+};
+
+const options={
+nodes:{
+shape:"dot",
+size:20,
+color:"#4da3ff"
+},
+edges:{
+color:"#aaa",
+arrows:"to"
+},
+physics:{
+enabled:true
+}
+};
+
+const network=new vis.Network(container,data,options);
+
+function highlight(id){
+nodes.update({id:id,color:"#ff7a18"});
+}
+
+function reset(){
+nodes.forEach(n=>{
+nodes.update({id:n.id,color:"#4da3ff"});
+});
+}
+
+function runExecution(){
+
+reset()
+
+setTimeout(()=>highlight(1),500)
+setTimeout(()=>highlight(2),1000)
+setTimeout(()=>highlight(3),1500)
+setTimeout(()=>highlight(4),2000)
+setTimeout(()=>highlight(5),2500)
+setTimeout(()=>highlight(6),3000)
+
+}
+
+</script>
+
+</body>
+</html>
