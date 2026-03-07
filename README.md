@@ -58,151 +58,194 @@ This enables:
 
 ---
 
-## 60-Second Quickstart
+## 🚀 60-Second Quickstart
 
-### Clone the repository
+Get M-OS running in less than a minute.
 
-```bash
-git clone https://github.com/raajmandale/mos-runtime.git
-cd mos-runtime
-Install dependencies
-pip install -r requirements.txt
-Run demo
-python cli/mos.py run examples/graph_opt.yaml
-Example Output
-PatternGraph loaded
-Nodes: 12
-Execution backend: CPU
+### 1. Clone the repository
 
-Running scheduler...
-Executing nodes...
+    git clone https://github.com/raajmandale/mos-runtime.git
+    cd mos-runtime
 
-Transform ✓
-Search ✓
-Optimize ✓
-Simulate ✓
-Aggregate ✓
+### 2. Install dependencies
 
-Execution complete
-Runtime: 0.42s
-Architecture
-<p align="center"> <img src="docs/assets/svg/mos_architecture.svg" width="900"> </p>
+    pip install -r requirements.txt
 
-M-OS runtime consists of five core layers:
+### 3. Run the demo
 
-Layer	Responsibility
-PatternGraph	describes computation patterns
-Runtime	executes graph nodes
-Scheduler	determines execution order
-Adapter	connects runtime to hardware
-Backend	CPU / GPU / AI compute
-Pattern Graph Example
-<p align="center"> <img src="docs/assets/svg/mos_pattern_graph.svg" width="900"> </p>
+    python cli/mos.py run examples/graph_opt.yaml
 
-Execution example:
+### Example Output
+
+    PatternGraph loaded
+    Nodes: 12
+    Execution backend: CPU
+
+    Running scheduler...
+    Executing nodes...
+
+    Transform ✓
+    Search ✓
+    Optimize ✓
+    Simulate ✓
+    Aggregate ✓
+
+    Execution complete
+    Runtime: 0.42s
+
+
+---
+
+# 🧠 Architecture
+
+<p align="center">
+<img src="docs/assets/svg/mos_architecture.svg" width="900">
+</p>
+
+M-OS is built as a layered runtime architecture.
+
+| Layer | Responsibility |
+|------|---------------|
+| PatternGraph | describes computation patterns |
+| Runtime | executes graph nodes |
+| Scheduler | determines execution order |
+| Adapter | connects runtime to hardware |
+| Backend | CPU / GPU / AI compute |
+
+---
+
+# 🔗 Pattern Graph Example
+
+<p align="center">
+<img src="docs/assets/svg/mos_pattern_graph.svg" width="900">
+</p>
+
+Example execution pattern:
 
 Transform → Search → Optimize → Simulate → Aggregate
 
-Each stage becomes a node in the PatternGraph, and the runtime scheduler determines how these nodes execute.
+Each stage becomes a node in the **PatternGraph**, allowing the runtime to schedule execution deterministically.
 
-Execution Flow
-<p align="center"> <img src="docs/assets/svg/mos_execution_flow.svg" width="900"> </p>
+---
+
+# ⚙️ Execution Flow
+
+<p align="center">
+<img src="docs/assets/svg/mos_execution_flow.svg" width="900">
+</p>
 
 Runtime pipeline:
 
-PatternGraph
-   ↓
-Scheduler
-   ↓
-Runtime
-   ↓
-Adapter
-   ↓
+PatternGraph  
+↓  
+Scheduler  
+↓  
+Runtime  
+↓  
+Adapter  
+↓  
 Backend Compute
-Execution Timeline
-<p align="center"> <img src="docs/assets/svg/mos_timeline.svg" width="900"> </p>
 
-This diagram illustrates how multiple pattern nodes execute across time.
+---
 
-Project Structure
-mos-runtime
-│
-├ core/
-│   ├ pattern_graph
-│   ├ runtime
-│   └ scheduler
-│
-├ adapters/
-│   ├ cpu
-│   ├ opencl
-│   └ ai
-│
-├ examples/
-│
-├ docs/
-│   └ assets/svg
-│
-└ cli/
-Why Pattern-Based Runtime
+# ⏱ Execution Timeline
+
+<p align="center">
+<img src="docs/assets/svg/mos_timeline.svg" width="900">
+</p>
+
+This timeline illustrates how multiple pattern nodes are executed across runtime stages.
+
+---
+
+# 📂 Project Structure
+
+    mos-runtime
+    │
+    ├ core/
+    │   ├ pattern_graph
+    │   ├ runtime
+    │   └ scheduler
+    │
+    ├ adapters/
+    │   ├ cpu
+    │   ├ opencl
+    │   └ ai
+    │
+    ├ examples/
+    ├ docs/
+    │   └ assets/svg
+    │
+    └ cli/
+
+---
+
+# 🔍 Why Pattern-Based Runtime
 
 Traditional compute systems are:
 
-imperative
-
-hardware-specific
-
-difficult to reproduce
+• imperative  
+• hardware-specific  
+• difficult to reproduce  
 
 M-OS introduces:
 
-pattern-driven execution
+• pattern-driven execution  
+• deterministic runtime graphs  
+• portable compute routing  
 
-deterministic runtime graphs
+This model works well for:
 
-portable compute routing
+• AI pipelines  
+• HPC workflows  
+• optimization engines  
+• simulation systems
 
-This makes M-OS suitable for:
+---
 
-AI pipelines
+# 🗺 Roadmap
 
-HPC workflows
+Current stage
 
-optimization systems
+    v0 — Pattern Runtime Core
 
-simulation engines
+Next stages
 
-Roadmap
+    v1 — Distributed scheduler
+    v2 — GPU execution backend
+    v3 — AI runtime adapters
+    v4 — Hybrid compute orchestration
 
-Current stage:
+---
 
-v0 — Pattern Runtime Core
+# 📊 Status
 
-Next stages:
+Research prototype.  
+Architecture baseline locked under **M-OS v0**.
 
-v1 — distributed scheduler
-v2 — GPU routing
-v3 — AI backend adapters
-v4 — hybrid compute orchestration
-Status
+---
 
-Research prototype.
+# 👤 Author
 
-Architecture baseline locked under M-OS v0.
-
-Author
-
-Raaj Mandale
+Raaj Mandale  
 Founder — ERANEST Technoware Pvt Ltd
 
-License
+---
+
+# 📄 License
 
 MIT License
 
-Citation
-@software{mandale_mos_runtime_2026,
-  author  = {Raaj Mandale},
-  title   = {M-OS: Pattern Runtime for Hybrid Compute},
-  year    = {2026},
-  url     = {https://github.com/raajmandale/mos-runtime},
-  version = {v0.1}
-}
+---
+
+# 📚 Citation
+
+If you use M-OS in research:
+
+    @software{mandale_mos_runtime_2026,
+      author  = {Raaj Mandale},
+      title   = {M-OS: Pattern Runtime for Hybrid Compute},
+      year    = {2026},
+      url     = {https://github.com/raajmandale/mos-runtime},
+      version = {v0.1}
+    }
