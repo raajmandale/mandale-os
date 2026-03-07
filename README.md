@@ -1,18 +1,20 @@
 <p align="center">
-  <img src="docs/banner.svg" width="900">
+  <img src="docs/assets/svg/mos_architecture.svg" width="900">
 </p>
 
 # M-OS Runtime
 
-Pattern Graph Runtime for Hybrid Compute (CPU / OpenCL / AI)
-# M-OS — Pattern Based Runtime System
+**Pattern Graph Runtime for Hybrid Compute (CPU / OpenCL / AI)**
 
-M-OS is a **Pattern State Transition Runtime** that automatically routes workloads
-to different compute backends.
+M-OS is a **Pattern State Transition Runtime (PSTG)** that routes computational workloads across heterogeneous compute backends.
 
-Instead of running programs as processes, M-OS executes **Pattern Graphs**.
+Instead of executing programs as static processes, M-OS executes **Pattern Graphs**.
 
-Patterns represent computational intent.
+---
+
+# Concept
+
+Patterns represent **computational intent**.
 
 Examples:
 
@@ -21,21 +23,15 @@ Examples:
 - infer
 - optimize
 
+These patterns are connected into **Pattern Graphs**, which the runtime executes through a scheduling pipeline.
+
 ---
-## Quick Demo
 
-Run the canonical pattern graph runtime:
+# Runtime Pipeline
 
-```bash
-python examples/demo_pattern_graph.py
-
-## Architecture
-
-![Architecture](docs/assets/svg/mos_architecture.svg)
-
-Pipeline:
 
 PatternGraph → Runtime → Scheduler → Adapter → Compute Backend
+
 
 Adapters currently included:
 
@@ -45,201 +41,55 @@ Adapters currently included:
 
 ---
 
-# Pattern Graph
+# Quick Demo
 
-Example pattern graph:
-
-![Pattern Graph](docs/assets/svg/mos_pattern_graph.svg)
-
-Example pipeline:
+Run the canonical pattern graph example.
 
 
-transform → search → infer
+python examples/demo_pattern_graph.py
 
 
-Each stage may execute on a different compute backend.
-
----
-
-# Execution Model
-
-![Execution Flow](docs/assets/svg/mos_execution_flow.svg)
-
-Steps:
-
-1. Load PatternGraph
-2. Scheduler chooses backend
-3. Adapter executes compute
-4. Results stored in runtime store
-5. Reports generated
-
----
-
-# Repository Structure
+Expected runtime flow:
 
 
-mos_repo
-│
-├── mos/
-│ ├── core/
-│ ├── adapters/
-│ ├── routing/
-│ ├── cli/
-│ └── utils/
-│
-├── demo/
-│ └── mos_visual_runtime.py
-│
-├── examples/
-│ ├── hybrid_pipeline.py
-│ └── pstg_demo.json
-│
-├── benchmarks/
-│ └── routing_benchmark.py
-│
-├── docs/
-│ ├── architecture.md
-│ ├── pstg_model.md
-│ └── assets/svg/
-│
-├── reports/
-│
-└── tests/
+PatternGraph → Runtime → Scheduler → Adapter → Compute
 
 
 ---
 
-# Quick Start
+# Architecture
 
-Clone the repo:
+<p align="center">
+  <img src="docs/assets/svg/mos_architecture.svg" width="850">
+</p>
 
+M-OS is structured into five layers:
 
-git clone https://github.com/yourname/mos
-
-cd mos
-
-
-Install requirements:
-
-
-pip install -r requirements.txt
-
-
----
-
-# Run the M-OS Demo Runtime
-
-Run the visual runtime demo:
-
-
-python demo/mos_visual_runtime.py
-
-
-This will:
-
-- build a pattern graph
-- schedule workloads
-- execute adapters
-- generate runtime reports
-
----
-
-# View Runtime Report
-
-Open:
-
-
-reports/runtime_visualization.html
-
-
-You will see:
-
-- pattern pipeline
-- execution results
-- backend routing
-- runtime metrics
+| Layer | Responsibility |
+|------|----------------|
+| PatternGraph | Describes computation as patterns |
+| Runtime | Executes graph nodes |
+| Scheduler | Determines execution order |
+| Adapter | Connects runtime to compute backend |
+| Backend | CPU / OpenCL / AI execution |
 
 ---
 
 # Pattern Graph Example
 
-Run example pipeline:
+<p align="center">
+  <img src="docs/assets/svg/pattern_graph.svg" width="850">
+</p>
+
+Example flow:
 
 
-python examples/hybrid_pipeline.py
-
-
-This demonstrates:
-
-- multi-stage graph execution
-- adapter scheduling
-- runtime store
-
----
-
-# Benchmark Scheduler
-
-Run benchmark:
-
-
-python benchmarks/routing_benchmark.py
-
-
-Output will be generated:
-
-
-reports/benchmark_runs.csv
+transform_data → search_route → rank_results → infer → optimize
 
 
 ---
 
-# Interactive Graph Viewer
-
-Open in browser:
-
-
-docs/pattern_graph_viewer.html
-
-
-This visualizes pattern graphs interactively.
-
----
-
-# Runtime Timeline
-
-Example runtime timeline:
-
-![Timeline](docs/assets/svg/mos_timeline.svg)
-
-Shows how time is spent per stage.
-
----
-## Interactive Runtime Explorer
-Open docs/runtime_explorer.html
-to explore the Pattern State Transition Graph interactively.
-
-# Adapter API
-
-Adapters implement:
-
-
-supports(pattern)
-estimate_cost(pattern)
-run(data)
-summarize(result)
-
-
-Example:
-
-
-mos/adapters/cpu_adapter.py
-
-
----
-
-# Tests
-
-Run basic runtime tests:
+# Run Tests
 
 
 python -m pytest tests/
@@ -247,15 +97,58 @@ python -m pytest tests/
 
 ---
 
+# Benchmark
+
+Benchmark scripts are located in:
+
+
+benchmarks/
+
+
+Run example benchmark:
+
+
+python benchmarks/runtime_benchmark.py
+
+
+---
+
+# Repository Structure
+
+
+mos/
+├ core
+│ ├ pstg.py
+│ ├ runtime.py
+│ ├ scheduler.py
+│ └ graph_executor.py
+│
+├ adapters
+│ ├ cpu_adapter.py
+│ ├ opencl_adapter.py
+│ └ airllm_adapter.py
+
+
+Supporting folders:
+
+
+benchmarks/
+demo/
+docs/
+examples/
+tests/
+research/
+
+
+---
+
 # Research
 
-See:
+Conceptual runtime model:
 
 
 research/mos_runtime_paper.md
 
-
-for the conceptual runtime model.
 
 ---
 
