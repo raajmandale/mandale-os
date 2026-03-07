@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="docs/assets/svg/mos_architecture.svg" width="1000">
-</p>
-
 <h1 align="center">M-OS</h1>
 
 <p align="center">
@@ -22,7 +18,7 @@ Deterministic execution for CPU / GPU / AI compute pipelines
 
 # 60-Second Quickstart
 
-Clone the repository
+Clone repository
 
 ```bash
 git clone https://github.com/raajmandale/mos-runtime.git
@@ -57,19 +53,22 @@ What is M-OS
 
 M-OS is a pattern-based runtime architecture designed to execute computational workflows as Pattern State Transition Graphs (PSTG).
 
-Instead of imperative code pipelines, M-OS treats computation as structured execution patterns.
+Instead of imperative pipelines, M-OS treats computation as structured execution patterns.
 
 This enables:
 
-• deterministic runtime execution
-• hardware-agnostic compute routing
-• reproducible AI / HPC workflows
-• structured optimization pipelines
+deterministic runtime execution
+
+hardware-agnostic compute routing
+
+reproducible AI / HPC workflows
+
+structured optimization pipelines
 
 Architecture
 <p align="center"> <img src="docs/assets/svg/mos_architecture.svg" width="900"> </p>
 
-M-OS runtime is composed of five core layers.
+M-OS runtime consists of five core layers.
 
 Layer	Responsibility
 PatternGraph	Describes computation as patterns
@@ -103,7 +102,7 @@ Backend Compute
 Execution Timeline
 <p align="center"> <img src="docs/assets/svg/mos_timeline.svg" width="900"> </p>
 Project Structure
-mos_repo_final_v0
+mos-runtime
 │
 ├ core/
 │   ├ pattern_graph
@@ -124,13 +123,13 @@ mos_repo_final_v0
 └ cli/
 Why M-OS
 
-Traditional compute systems are
+Traditional compute systems are:
 
 imperative
 hardware specific
 difficult to reproduce
 
-M-OS introduces
+M-OS introduces:
 
 pattern driven execution
 deterministic runtime graphs
@@ -144,7 +143,7 @@ Current version
 
 v0 — Pattern Runtime Core
 
-Next stages
+Future stages
 
 v1 — distributed scheduler
 v2 — GPU routing
@@ -163,12 +162,4 @@ Founder — ERANEST Technoware Pvt Ltd
 
 License
 
-<<<<<<< HEAD
 MIT License
-
-
----
-
-=======
-MIT License
->>>>>>> 4eb794d (Finalize README layout)
