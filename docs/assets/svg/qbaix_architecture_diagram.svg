@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="700" viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .title { font: bold 36px sans-serif; fill: #111; }
+    .subtitle { font: 18px sans-serif; fill: #444; }
+    .box { stroke-width:2; rx:12; ry:12; }
+    .label { font: 20px sans-serif; fill:white; font-weight:bold; text-anchor:middle; dominant-baseline:middle; }
+    .arrow { stroke:#555; stroke-width:3; marker-end:url(#arrowhead); }
+</style>
+
+<defs>
+<marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+</marker>
+</defs>
+
+<text x="500" y="60" class="title" text-anchor="middle">QBAIX Hybrid Compute Architecture</text>
+<text x="500" y="95" class="subtitle" text-anchor="middle">Execution‑Centric Hybrid CPU / GPU Compute Model</text>
+
+<!-- Application Layer -->
+<rect x="300" y="130" width="400" height="70" fill="#4A6CF7" class="box"/>
+<text x="500" y="165" class="label">Applications</text>
+<text x="500" y="185" font-size="14" text-anchor="middle" fill="white">AI • Simulation • Optimization • Analytics</text>
+
+<!-- M-OS -->
+<rect x="300" y="230" width="400" height="80" fill="#9B59B6" class="box"/>
+<text x="500" y="265" class="label">M‑OS Runtime</text>
+<text x="500" y="290" font-size="14" text-anchor="middle" fill="white">Pattern Routing • Workload Classification • Hybrid Scheduling</text>
+
+<!-- UNI-OS -->
+<rect x="300" y="340" width="400" height="70" fill="#16A085" class="box"/>
+<text x="500" y="375" class="label">UNI‑OS Governance Layer</text>
+<text x="500" y="395" font-size="14" text-anchor="middle" fill="white">Execution Isolation • Integrity Enforcement</text>
+
+<!-- X-ENGINE -->
+<rect x="300" y="440" width="400" height="80" fill="#F39C12" class="box"/>
+<text x="500" y="475" class="label">X‑ENGINE Hybrid Execution</text>
+<text x="500" y="500" font-size="14" text-anchor="middle" fill="white">CPU Domain • GPU Domain • Accelerators</text>
+
+<!-- Hardware -->
+<rect x="300" y="550" width="400" height="70" fill="#2C3E50" class="box"/>
+<text x="500" y="585" class="label">Hardware Infrastructure</text>
+<text x="500" y="605" font-size="14" text-anchor="middle" fill="white">CPUs • GPUs • NVMe • Memory Fabric</text>
+
+<!-- Arrows -->
+<line x1="500" y1="200" x2="500" y2="230" class="arrow"/>
+<line x1="500" y1="310" x2="500" y2="340" class="arrow"/>
+<line x1="500" y1="410" x2="500" y2="440" class="arrow"/>
+<line x1="500" y1="520" x2="500" y2="550" class="arrow"/>
+
+</svg>
