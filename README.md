@@ -12,29 +12,38 @@
 </p>
 
 ---
+
 <div align="center">
 
-[![LIVE](https://img.shields.io/badge/LIVE-REACTOR-1f2937?style=for-the-badge)](https://github.com/raajmandale/mandale-os)
-[![DEMO](https://img.shields.io/badge/DEMO-RUNTIME%20SURFACE-0ea5e9?style=for-the-badge)](https://raajmandale.github.io/mandale-os/demo/Mandale-OS-demo.html)
+[![LIVE](https://img.shields.io/badge/LIVE-RUNTIME%20REACTOR-111827?style=for-the-badge)](https://github.com/raajmandale/mandale-os)
+[![DEMO](https://img.shields.io/badge/DEMO-CINEMATIC%20SURFACE-0ea5e9?style=for-the-badge)](https://raajmandale.github.io/mandale-os/demo/Mandale-OS-demo.html)
 [![RESEARCH](https://img.shields.io/badge/RESEARCH-RUNTIME%20INTELLIGENCE-2563eb?style=for-the-badge)](https://github.com/raajmandale/mandale-os)
-[![FOUNDER](https://img.shields.io/badge/FOUNDER-RAAJ%20MANDALE-111827?style=for-the-badge)](https://raajmandale.in)
+[![FOUNDER](https://img.shields.io/badge/FOUNDER-RAAJ%20MANDALE-1f2937?style=for-the-badge)](https://raajmandale.in)
+
+<br>
+
+[![ORCID](https://img.shields.io/badge/ORCID-RESEARCH%20IDENTITY-a3e635?style=for-the-badge)](https://orcid.org/0009-0005-9810-1655)
+[![WIKIDATA](https://img.shields.io/badge/WIKIDATA-Q139570902-0f172a?style=for-the-badge)](https://www.wikidata.org/wiki/Q139570902)
+[![OPENALEX](https://img.shields.io/badge/OPENALEX-A5127026877-334155?style=for-the-badge)](https://openalex.org/A5127026877)
+[![ZENODO](https://img.shields.io/badge/ZENODO-QBAIX%20RESEARCH-1d4ed8?style=for-the-badge)](https://zenodo.org/communities/qbaix)
 
 <br>
 
 [![CORE](https://img.shields.io/badge/MANDALE--OS-RUNTIME%20CORE-06b6d4?style=for-the-badge)](https://github.com/raajmandale/mandale-os)
-[![MEE](https://img.shields.io/badge/MEE-EXECUTION%20REACTOR-f97316?style=for-the-badge)](https://github.com/raajmandale/mos-mee-execution-reactor)
-[![PPE](https://img.shields.io/badge/PPE-PATTERN%20PROOF%20ENGINE-4f46e5?style=for-the-badge)](https://github.com/raajmandale/M-OS_PPE)
+[![MEE](https://img.shields.io/badge/MEE-EXECUTION%20REACTOR-f97316?style=for-the-badge)](https://github.com/raajmandale/mos-mee-execution-reactor/tree/ppe-v2)
+[![PPE](https://img.shields.io/badge/PPE-PROOF%20RUNTIME-4f46e5?style=for-the-badge)](https://github.com/raajmandale/M-OS_PPE)
 [![PARAMETER](https://img.shields.io/badge/PARAMETER-GOLF-374151?style=for-the-badge)](https://github.com/raajmandale/mos-parameter-golf)
 [![XLIFELINE](https://img.shields.io/badge/XLIFELINE-CONTINUITY%20RUNTIME-0284c7?style=for-the-badge)](https://github.com/raajmandale/XLifelineAI)
 
 </div>
 
 ---
-## 🌐 Ecosystem Surface
+
+# 🌐 Runtime Civilization Surface
 
 | Surface | Link |
 |---|---|
-| 🚀 Live Runtime Demo | https://raajmandale.github.io/mandale-os/ |
+| 🚀 Runtime Demo Surface | https://raajmandale.github.io/mandale-os/demo/Mandale-OS-demo.html |
 | 👤 Founder Website | https://raajmandale.in |
 | 🧠 ORCID | https://orcid.org/0009-0005-9810-1655 |
 | 📚 Wikidata | https://www.wikidata.org/wiki/Q139570902 |
@@ -43,26 +52,16 @@
 | 💻 GitHub Profile | https://github.com/raajmandale |
 
 ---
-### 🧩 Related M-OS Ecosystem Repositories
+
+# 🧩 Related M-OS Ecosystem Repositories
 
 | Repository | Runtime Branch |
 |---|---|
 | ⚡ [mandale-os](https://github.com/raajmandale/mandale-os) | Root Runtime Intelligence Ecosystem |
-| 🧠 [mos-mee-execution-reactor](https://github.com/raajmandale/mos-mee-execution-reactor) | Execution Memory Reactor |
+| 🧠 [mos-mee-execution-reactor / PPE-v2](https://github.com/raajmandale/mos-mee-execution-reactor/tree/ppe-v2) | Execution Memory Reactor + Proof Branch |
 | 🔬 [M-OS PPE — Pattern Proof Engine](https://github.com/raajmandale/M-OS_PPE) | Proof Runtime Branch |
 | 🧬 [mos-parameter-golf](https://github.com/raajmandale/mos-parameter-golf) | Runtime Optimization Research |
 | 🌐 [XLifelineAI](https://github.com/raajmandale/XLifelineAI) | Continuity Runtime Research |
-
----
-<p align="center">
-
-![status](https://img.shields.io/badge/status-Research%20Runtime-blue)
-![core](https://img.shields.io/badge/core-Mandale--OS-cyan)
-![engine](https://img.shields.io/badge/engine-Execution%20Memory%20Reactor-orange)
-![branch](https://img.shields.io/badge/QBAIX-Compute%20Branch-lightgrey)
-![license](https://img.shields.io/badge/license-MIT-white)
-
-</p>
 
 ---
 
@@ -81,22 +80,26 @@ instead of treating every workload as isolated and stateless.
 
 ---
 
-## 🧬 Core Runtime Doctrine
+# 🧬 Core Runtime Doctrine
 
 ```text
 UNDERSTAND → ROUTE → EXECUTE → PROVE → VERIFY → CONTINUE → EVOLVE
 ```
 
-Mandale-OS is **not** a Windows/Linux replacement.
+Mandale-OS is **not**:
 
-It is a research runtime layer for:
+- a Linux replacement
+- a Windows replacement
+- a consumer operating system
 
-- 🧠 Pattern-aware execution
-- 🔀 Runtime routing
-- ⚡ Execution memory
-- 📡 Proof intelligence
-- ♻️ Continuity-aware runtime behavior
-- 🖥️ QBAIX hybrid compute realization
+Mandale-OS **is**:
+
+- a runtime intelligence research ecosystem
+- a pattern-routing runtime direction
+- an execution-memory exploration system
+- a proof-runtime architecture
+- a continuity-aware runtime layer
+- a hybrid compute orchestration concept
 
 ---
 
@@ -193,6 +196,37 @@ Mandale-OS treats runtime graphs as the system language.
 
 ---
 
+# ⚡ Runtime Benchmark Surfaces
+
+Mandale-OS explores runtime execution behavior through:
+
+- execution pressure mapping
+- routing density analysis
+- graph topology evolution
+- execution reuse pathways
+- continuity pressure systems
+- proof verification movement
+- hybrid compute orchestration
+
+<p align="center">
+  <img src="docs/assets/SVG/mandale-os-runtime-graphs.gif" width="100%" alt="Runtime Benchmark Surface">
+</p>
+
+---
+
+## Benchmark Domains
+
+| Domain | Purpose |
+|---|---|
+| Execution Pressure | Runtime pathway stress observation |
+| Routing Density | Structural execution pathway mapping |
+| Runtime Reuse | Signature-based workload reuse |
+| Continuity Runtime | Failure persistence exploration |
+| Proof Routing | Verification and evidence movement |
+| Hybrid Compute | QBAIX compute orchestration |
+
+---
+
 # 🌐 Ecosystem Constellation
 
 <p align="center">
@@ -263,12 +297,12 @@ The original MEE branch includes benchmark and proof surfaces for:
 Open the runtime showcase:
 
 ```text
-demo/index.html
+https://raajmandale.github.io/mandale-os/demo/Mandale-OS-demo.html
 ```
 
 ---
 
-## The Demo Explains
+## Demo Explains
 
 - Mandale-OS doctrine
 - architecture ecosystem
@@ -276,6 +310,32 @@ demo/index.html
 - execution lifecycle
 - QBAIX compute relation
 - founder/research identity
+
+---
+
+# 🎬 Visual Runtime Assets
+
+All cinematic runtime assets are stored under:
+
+```text
+docs/assets/SVG/
+```
+
+Includes:
+
+- runtime topology graphs
+- execution lifecycle reactors
+- runtime graph intelligence motion
+- ecosystem constellation visuals
+- QBAIX compute motion surfaces
+- cinematic runtime GIF demonstrations
+
+These assets serve as:
+
+- runtime benchmark surfaces
+- visual execution maps
+- ecosystem identity layers
+- research presentation infrastructure
 
 ---
 
@@ -290,9 +350,7 @@ mandale-os/
 │
 ├── docs/
 │   ├── assets/
-│   │   ├── svg/
-│   │   ├── gif/
-│   │   └── png/
+│   │   └── SVG/
 │   │
 │   ├── architecture.md
 │   ├── adapter_api.md
@@ -312,30 +370,20 @@ mandale-os/
 
 ---
 
-# ❌ What Mandale-OS is NOT
+# 🛰️ Research Position
 
-Mandale-OS is NOT:
+Mandale-OS is an exploratory runtime intelligence ecosystem.
 
-- a consumer operating system
-- a Linux distribution
-- a Windows replacement
-- a production scheduler
-- a finished AI runtime
-- an enterprise benchmark claim
+The project investigates:
 
----
+- execution memory systems
+- pattern-aware runtime routing
+- continuity-aware execution
+- proof-state runtime systems
+- topology-driven execution graphs
+- hybrid compute orchestration
 
-# ✅ What Mandale-OS IS
-
-Mandale-OS IS:
-
-- a runtime intelligence research ecosystem
-- a pattern-routing runtime direction
-- an execution-memory exploration system
-- a proof-runtime architecture
-- a continuity-aware runtime layer
-- a hybrid compute orchestration concept
-- a visual runtime civilization surface
+This repository represents a public research and ecosystem surface, not a finalized production runtime.
 
 ---
 
@@ -386,4 +434,14 @@ MIT
 Intelligence is the infrastructure.<br>
 Execution is the purpose.<br>
 Continuity is the promise.
+</p>
+
+<p align="center">
+
+![status](https://img.shields.io/badge/status-Research%20Runtime-blue)
+![core](https://img.shields.io/badge/core-Mandale--OS-cyan)
+![engine](https://img.shields.io/badge/engine-Execution%20Memory%20Reactor-orange)
+![branch](https://img.shields.io/badge/QBAIX-Compute%20Branch-lightgrey)
+![license](https://img.shields.io/badge/license-MIT-white)
+
 </p>
