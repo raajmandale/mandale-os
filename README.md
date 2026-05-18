@@ -336,7 +336,7 @@ docs/assets/SVG/
 ---
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/raajmandale/mandale-os/main/docs/assets/SVG/mandale-os-runtime-graphs.gif" width="100%" alt="Mandale-OS Runtime Graph Intelligence">
+  <img src="https://raw.githubusercontent.com/raajmandale/mandale-os/main/docs/assets/SVG/05_Mandale-OS_Runtime_Graphs.svg" width="100%" alt="Mandale-OS Runtime Graph Intelligence">
 </p>
 
 ---
