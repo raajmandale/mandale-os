@@ -1,0 +1,256 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <title>Mandale-OS Runtime Topology Graph — Ultra Glass Reactor Edition</title>
+  <desc>Final high-impact animated SVG visual for Mandale-OS runtime topology with blue/orange glass reactor motion, graph routing, and 2050 runtime civilization style.</desc>
+
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="80%">
+      <stop offset="0%" stop-color="#12375c"/>
+      <stop offset="38%" stop-color="#071627"/>
+      <stop offset="100%" stop-color="#02050b"/>
+    </radialGradient>
+
+    <radialGradient id="coreGlow" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#21f0ff" stop-opacity="0.92"/>
+      <stop offset="42%" stop-color="#057cff" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#06111f" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="orangeCore" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#ffb347" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#ff7418" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#1a0802" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="blueOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="48%" stop-color="#168cff"/>
+      <stop offset="100%" stop-color="#ff7a18"/>
+    </linearGradient>
+
+    <linearGradient id="glassBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#94efff" stop-opacity="0.24"/>
+      <stop offset="55%" stop-color="#0e7bff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.025"/>
+    </linearGradient>
+
+    <linearGradient id="glassOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb15a" stop-opacity="0.25"/>
+      <stop offset="55%" stop-color="#ff7418" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.025"/>
+    </linearGradient>
+
+    <filter id="glowBlue" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0
+                0 0 0 0 .84
+                0 0 0 0 1
+                0 0 0 .9 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="glowOrange" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 1
+                0 0 0 0 .42
+                0 0 0 0 .04
+                0 0 0 .9 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+
+    <filter id="softBlur">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+
+    <style>
+      .font{font-family:Inter,Segoe UI,Arial,sans-serif}
+      .title{font-size:64px;font-weight:900;letter-spacing:-2px;fill:#f8fbff}
+      .subtitle{font-size:22px;font-weight:550;fill:#aad1ff}
+      .micro{font-size:13px;font-weight:850;letter-spacing:2.7px;fill:#81afd2}
+      .label{font-size:22px;font-weight:900;fill:#f8fbff}
+      .small{font-size:14px;font-weight:650;fill:#b8cee0}
+
+      .routeBlue{
+        fill:none;stroke:#00d8ff;stroke-width:3.1;stroke-linecap:round;
+        stroke-dasharray:14 20;animation:dashBlue 5.5s linear infinite;
+        filter:url(#glowBlue);
+      }
+      .routeOrange{
+        fill:none;stroke:#ff7a18;stroke-width:3.1;stroke-linecap:round;
+        stroke-dasharray:16 22;animation:dashOrange 6.2s linear infinite;
+        filter:url(#glowOrange);
+      }
+      .ghostBlue{fill:none;stroke:#00d8ff;stroke-width:1.1;opacity:.24}
+      .ghostOrange{fill:none;stroke:#ff7a18;stroke-width:1.1;opacity:.22}
+      .orbitBlue{fill:none;stroke:#00d8ff;stroke-width:1.15;stroke-dasharray:7 14;opacity:.55}
+      .orbitOrange{fill:none;stroke:#ff7a18;stroke-width:1.15;stroke-dasharray:9 16;opacity:.52}
+
+      .nodeBlue{fill:url(#glassBlue);stroke:#00d8ff;stroke-width:2.3;filter:url(#glowBlue)}
+      .nodeOrange{fill:url(#glassOrange);stroke:#ff7a18;stroke-width:2.3;filter:url(#glowOrange)}
+      .core{fill:rgba(4,18,32,.72);stroke:url(#blueOrange);stroke-width:3.2;filter:url(#glowBlue)}
+      .glassPanel{fill:rgba(4,18,32,.55);stroke:rgba(89,210,255,.26);stroke-width:1.2;filter:url(#shadow)}
+
+      .spin{animation:spin 38s linear infinite;transform-origin:960px 560px}
+      .spinReverse{animation:spinReverse 62s linear infinite;transform-origin:960px 560px}
+      .pulse{animation:pulse 2.8s ease-in-out infinite}
+      .floatA{animation:floatA 7.5s ease-in-out infinite}
+      .floatB{animation:floatB 8.5s ease-in-out infinite}
+      .shimmer{animation:shimmer 5.8s ease-in-out infinite}
+      .slowGlow{animation:slowGlow 4.8s ease-in-out infinite}
+
+      @keyframes dashBlue{to{stroke-dashoffset:-260}}
+      @keyframes dashOrange{to{stroke-dashoffset:260}}
+      @keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+      @keyframes spinReverse{from{transform:rotate(360deg)}to{transform:rotate(0deg)}}
+      @keyframes pulse{0%,100%{opacity:.58;transform:scale(1)}50%{opacity:1;transform:scale(1.06)}}
+      @keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+      @keyframes floatB{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
+      @keyframes shimmer{0%,100%{opacity:.32}50%{opacity:.92}}
+      @keyframes slowGlow{0%,100%{opacity:.62}50%{opacity:1}}
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+
+  <!-- deep grid -->
+  <g opacity=".13">
+    <path d="M0 180H1920 M0 360H1920 M0 540H1920 M0 720H1920 M0 900H1920" stroke="#7fc7ff"/>
+    <path d="M180 0V1080 M360 0V1080 M540 0V1080 M720 0V1080 M900 0V1080 M1080 0V1080 M1260 0V1080 M1440 0V1080 M1620 0V1080 M1800 0V1080" stroke="#7fc7ff"/>
+  </g>
+
+  <!-- atmospheric fog + diagonals -->
+  <ellipse cx="1000" cy="585" rx="760" ry="360" fill="#00d8ff" opacity=".055" filter="url(#softBlur)"/>
+  <ellipse cx="1180" cy="560" rx="520" ry="300" fill="#ff7a18" opacity=".045" filter="url(#softBlur)"/>
+  <g opacity=".18">
+    <path d="M250 235 C600 480 840 390 960 560 C1120 350 1390 420 1665 250" class="ghostBlue"/>
+    <path d="M250 770 C620 540 820 755 960 560 C1160 805 1370 680 1665 830" class="ghostOrange"/>
+    <path d="M270 610 C590 210 860 790 960 560 C1170 330 1390 740 1690 450" class="ghostBlue"/>
+  </g>
+
+  <!-- header -->
+  <text x="72" y="105" class="font title">Mandale-OS Runtime Topology Graph</text>
+  <text x="74" y="156" class="font subtitle">Adaptive graph fabric for pattern, route, execution, proof, continuity, memory, and compute.</text>
+  <text x="74" y="194" class="font micro">ULTRA GLASS REACTOR EDITION • LIVING RUNTIME TOPOLOGY • BLUE INTELLIGENCE + ORANGE EXECUTION</text>
+
+  <!-- orbit systems -->
+  <g class="spin">
+    <ellipse cx="960" cy="560" rx="650" ry="300" class="orbitBlue"/>
+    <ellipse cx="960" cy="560" rx="480" ry="220" class="orbitBlue" transform="rotate(10 960 560)"/>
+  </g>
+  <g class="spinReverse">
+    <ellipse cx="960" cy="560" rx="760" ry="355" class="orbitOrange" transform="rotate(-8 960 560)"/>
+    <ellipse cx="960" cy="560" rx="360" ry="165" class="orbitOrange" transform="rotate(18 960 560)"/>
+  </g>
+
+  <!-- core glow -->
+  <circle cx="960" cy="560" r="230" fill="url(#coreGlow)" class="slowGlow"/>
+  <circle cx="960" cy="560" r="142" fill="url(#orangeCore)" opacity=".65"/>
+  <circle cx="960" cy="560" r="130" class="core"/>
+  <circle cx="960" cy="560" r="78" fill="#071522" stroke="#00d8ff" stroke-width="2.2" filter="url(#glowBlue)"/>
+  <text x="960" y="552" text-anchor="middle" class="font label" style="font-size:34px">RUNTIME CORE</text>
+  <text x="960" y="588" text-anchor="middle" class="font micro">PATTERN • MEMORY • ROUTE • PROOF</text>
+
+  <!-- major routing paths -->
+  <path d="M420 410 C600 245 790 340 850 485 C910 420 960 560 960 560" class="routeBlue"/>
+  <path d="M735 260 C840 340 810 440 960 560" class="routeBlue"/>
+  <path d="M705 740 C810 690 830 610 960 560" class="routeBlue"/>
+  <path d="M560 820 C720 805 800 680 960 560" class="routeBlue"/>
+  <path d="M1230 275 C1125 370 1090 460 960 560" class="routeOrange"/>
+  <path d="M1505 415 C1340 470 1210 500 960 560" class="routeOrange"/>
+  <path d="M1325 760 C1190 690 1095 620 960 560" class="routeOrange"/>
+  <path d="M1615 835 C1420 800 1240 695 960 560" class="routeOrange"/>
+
+  <!-- secondary turbulence paths -->
+  <g class="shimmer">
+    <path d="M380 575 C620 430 805 780 960 560 C1180 355 1340 630 1560 560" class="ghostBlue"/>
+    <path d="M430 845 C675 640 790 900 960 560 C1135 270 1290 540 1510 230" class="ghostOrange"/>
+    <path d="M315 330 C550 520 730 210 960 560 C1220 850 1410 610 1690 700" class="ghostBlue"/>
+  </g>
+
+  <!-- nodes -->
+  <g class="floatA">
+    <circle cx="420" cy="410" r="84" class="nodeBlue"/>
+    <text x="420" y="404" text-anchor="middle" class="font label">Intent</text>
+    <text x="420" y="430" text-anchor="middle" class="font small">Input pressure</text>
+  </g>
+
+  <g class="floatB">
+    <circle cx="735" cy="260" r="88" class="nodeBlue"/>
+    <text x="735" y="254" text-anchor="middle" class="font label">Pattern</text>
+    <text x="735" y="280" text-anchor="middle" class="font small">Cognition</text>
+  </g>
+
+  <g class="floatA">
+    <circle cx="850" cy="405" r="82" class="nodeBlue"/>
+    <text x="850" y="399" text-anchor="middle" class="font label">Memory</text>
+    <text x="850" y="425" text-anchor="middle" class="font small">Reuse graph</text>
+  </g>
+
+  <g class="floatB">
+    <circle cx="1230" cy="275" r="88" class="nodeOrange"/>
+    <text x="1230" y="269" text-anchor="middle" class="font label">Route</text>
+    <text x="1230" y="295" text-anchor="middle" class="font small">Decision</text>
+  </g>
+
+  <g class="floatA">
+    <circle cx="1505" cy="415" r="92" class="nodeOrange"/>
+    <text x="1505" y="409" text-anchor="middle" class="font label">Execute</text>
+    <text x="1505" y="435" text-anchor="middle" class="font small">Action force</text>
+  </g>
+
+  <g class="floatB">
+    <circle cx="1325" cy="760" r="92" class="nodeOrange"/>
+    <text x="1325" y="754" text-anchor="middle" class="font label">Proof</text>
+    <text x="1325" y="780" text-anchor="middle" class="font small">Evidence</text>
+  </g>
+
+  <g class="floatA">
+    <circle cx="955" cy="870" r="88" class="nodeBlue"/>
+    <text x="955" y="864" text-anchor="middle" class="font label">Continuity</text>
+    <text x="955" y="890" text-anchor="middle" class="font small">Recovery</text>
+  </g>
+
+  <g class="floatB">
+    <circle cx="705" cy="740" r="86" class="nodeBlue"/>
+    <text x="705" y="734" text-anchor="middle" class="font label">Optimize</text>
+    <text x="705" y="760" text-anchor="middle" class="font small">Efficiency</text>
+  </g>
+
+  <g class="floatA">
+    <circle cx="1615" cy="835" r="88" class="nodeOrange"/>
+    <text x="1615" y="829" text-anchor="middle" class="font label">QBAIX</text>
+    <text x="1615" y="855" text-anchor="middle" class="font small">Compute branch</text>
+  </g>
+
+  <!-- micro particles -->
+  <g filter="url(#glowBlue)" class="pulse">
+    <circle cx="575" cy="335" r="5" fill="#00d8ff"/>
+    <circle cx="665" cy="575" r="4" fill="#00d8ff"/>
+    <circle cx="810" cy="675" r="4" fill="#00d8ff"/>
+    <circle cx="1015" cy="675" r="4" fill="#00d8ff"/>
+    <circle cx="530" cy="795" r="4" fill="#00d8ff"/>
+  </g>
+  <g filter="url(#glowOrange)" class="pulse">
+    <circle cx="1140" cy="380" r="5" fill="#ff7a18"/>
+    <circle cx="1380" cy="420" r="4" fill="#ff7a18"/>
+    <circle cx="1270" cy="635" r="4" fill="#ff7a18"/>
+    <circle cx="1495" cy="760" r="4" fill="#ff7a18"/>
+    <circle cx="1568" cy="672" r="4" fill="#ff7a18"/>
+  </g>
+
+  <!-- side metadata panels -->
+  <rect x="72" y="850" width="455" height="112" rx="24" class="glassPanel"/>
+  <text x="105" y="895" class="font label" style="font-size:20px">Blue Runtime Domain</text>
+  <text x="105" y="925" class="font small">Pattern • Memory • Continuity • Optimization</text>
+
+  <rect x="1390" y="165" width="455" height="112" rx="24" class="glassPanel"/>
+  <text x="1423" y="210" class="font label" style="font-size:20px">Orange Execution Domain</text>
+  <text x="1423" y="240" class="font small">Route • Execute • Proof • Compute Force</text>
+
+  <text x="72" y="1015" class="font micro">MANDALE-OS • LIVING RUNTIME GRAPH • NOT STATIC ANALYTICS • FUTURE EXECUTION CIVILIZATION</text>
+</svg>

@@ -1,0 +1,215 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <title>Mandale-OS Runtime Graphs — Ultra Glass Reactor Edition</title>
+  <desc>High-impact animated blue-orange runtime graph wall for Mandale-OS with glass panels, graph motion, proof routing, continuity and hybrid compute signals.</desc>
+
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="82%">
+      <stop offset="0%" stop-color="#12375c"/>
+      <stop offset="42%" stop-color="#071524"/>
+      <stop offset="100%" stop-color="#02050b"/>
+    </radialGradient>
+
+    <linearGradient id="panelBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8feeff" stop-opacity=".22"/>
+      <stop offset="50%" stop-color="#0a7dff" stop-opacity=".07"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity=".025"/>
+    </linearGradient>
+
+    <linearGradient id="panelOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb15a" stop-opacity=".23"/>
+      <stop offset="50%" stop-color="#ff7418" stop-opacity=".075"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity=".025"/>
+    </linearGradient>
+
+    <filter id="glowBlue" x="-90%" y="-90%" width="280%" height="280%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feColorMatrix in="b" type="matrix"
+        values="0 0 0 0 0
+                0 0 0 0 .82
+                0 0 0 0 1
+                0 0 0 .9 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="glowOrange" x="-90%" y="-90%" width="280%" height="280%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feColorMatrix in="b" type="matrix"
+        values="0 0 0 0 1
+                0 0 0 0 .42
+                0 0 0 0 .04
+                0 0 0 .9 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="22" stdDeviation="18" flood-color="#000000" flood-opacity=".58"/>
+    </filter>
+
+    <filter id="fog">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+
+    <style>
+      .font{font-family:Inter,Segoe UI,Arial,sans-serif}
+      .title{font-size:62px;font-weight:900;letter-spacing:-2px;fill:#f8fbff}
+      .subtitle{font-size:22px;font-weight:550;fill:#aad1ff}
+      .micro{font-size:13px;font-weight:850;letter-spacing:2.5px;fill:#80add0}
+      .label{font-size:22px;font-weight:900;fill:#f8fbff}
+      .small{font-size:13px;font-weight:650;fill:#b7cddd}
+
+      .panelB{fill:url(#panelBlue);stroke:#00d8ff;stroke-width:1.45;filter:url(#shadow)}
+      .panelO{fill:url(#panelOrange);stroke:#ff7a18;stroke-width:1.45;filter:url(#shadow)}
+
+      .lineB{fill:none;stroke:#00d8ff;stroke-width:2.2;stroke-linecap:round;stroke-dasharray:10 16;animation:flowB 5.4s linear infinite;filter:url(#glowBlue)}
+      .lineO{fill:none;stroke:#ff7a18;stroke-width:2.2;stroke-linecap:round;stroke-dasharray:12 17;animation:flowO 6.1s linear infinite;filter:url(#glowOrange)}
+      .thinB{fill:none;stroke:#00d8ff;stroke-width:1.1;opacity:.42}
+      .thinO{fill:none;stroke:#ff7a18;stroke-width:1.1;opacity:.38}
+
+      .nodeB{fill:#00d8ff;filter:url(#glowBlue)}
+      .nodeO{fill:#ff7a18;filter:url(#glowOrange)}
+
+      .pulse{animation:pulse 2.9s ease-in-out infinite}
+      .floatA{animation:floatA 7.4s ease-in-out infinite}
+      .floatB{animation:floatB 8.2s ease-in-out infinite}
+      .scan{animation:scan 6s ease-in-out infinite}
+      .shimmer{animation:shimmer 5s ease-in-out infinite}
+      @keyframes flowB{to{stroke-dashoffset:-220}}
+      @keyframes flowO{to{stroke-dashoffset:220}}
+      @keyframes pulse{0%,100%{opacity:.58}50%{opacity:1}}
+      @keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+      @keyframes floatB{0%,100%{transform:translateY(0)}50%{transform:translateY(9px)}}
+      @keyframes scan{0%,100%{opacity:.15;transform:translateY(-18px)}50%{opacity:.7;transform:translateY(18px)}}
+      @keyframes shimmer{0%,100%{opacity:.38}50%{opacity:.92}}
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+
+  <!-- grid + atmosphere -->
+  <g opacity=".12">
+    <path d="M0 180H1920 M0 360H1920 M0 540H1920 M0 720H1920 M0 900H1920" stroke="#7fc7ff"/>
+    <path d="M180 0V1080 M360 0V1080 M540 0V1080 M720 0V1080 M900 0V1080 M1080 0V1080 M1260 0V1080 M1440 0V1080 M1620 0V1080 M1800 0V1080" stroke="#7fc7ff"/>
+  </g>
+  <ellipse cx="960" cy="560" rx="790" ry="380" fill="#00d8ff" opacity=".045" filter="url(#fog)"/>
+  <ellipse cx="1180" cy="540" rx="560" ry="300" fill="#ff7a18" opacity=".038" filter="url(#fog)"/>
+
+  <text x="72" y="102" class="font title">Mandale-OS Runtime Graphs</text>
+  <text x="74" y="153" class="font subtitle">Future runtime intelligence graph wall for pattern, execution, proof, continuity, optimization, and hybrid compute.</text>
+  <text x="74" y="191" class="font micro">ULTRA GLASS REACTOR EDITION • BLUE INTELLIGENCE + ORANGE EXECUTION • LIVING GRAPH SYSTEM</text>
+
+  <!-- global background routes -->
+  <g class="shimmer" opacity=".24">
+    <path d="M120 520 C430 300 725 650 960 530 C1210 380 1420 640 1800 420" class="thinB"/>
+    <path d="M145 790 C520 560 730 900 970 560 C1210 250 1480 500 1780 255" class="thinO"/>
+    <path d="M130 310 C470 515 670 220 960 535 C1190 790 1450 360 1800 700" class="thinB"/>
+  </g>
+
+  <!-- panel helper groups -->
+  <g class="floatA">
+    <rect x="90" y="250" width="520" height="265" rx="28" class="panelB"/>
+    <text x="126" y="302" class="font label">Pattern Graph</text>
+    <text x="126" y="330" class="font small">Runtime cognition clusters</text>
+    <g transform="translate(350 392)">
+      <path d="M-145 10 C-80 -80,10 80,110 -55 C145 -20,120 90,-35 78 C-110 75,-160 40,-145 10" class="lineB"/>
+      <circle cx="-145" cy="10" r="7" class="nodeB pulse"/>
+      <circle cx="-65" cy="-42" r="6" class="nodeB pulse"/>
+      <circle cx="5" cy="42" r="8" class="nodeB pulse"/>
+      <circle cx="110" cy="-55" r="7" class="nodeB pulse"/>
+      <circle cx="85" cy="64" r="6" class="nodeB pulse"/>
+      <circle cx="-35" cy="78" r="7" class="nodeB pulse"/>
+      <circle cx="20" cy="-82" r="5" class="nodeB pulse"/>
+    </g>
+    <path d="M116 475 H585" class="thinB scan"/>
+  </g>
+
+  <g class="floatB">
+    <rect x="700" y="250" width="520" height="265" rx="28" class="panelO"/>
+    <text x="736" y="302" class="font label">Execution Topology</text>
+    <text x="736" y="330" class="font small">Orange execution pressure field</text>
+    <g transform="translate(960 392)">
+      <path d="M-130 86 L-75 -45 L-15 72 L42 -86 L100 75 L145 -42" class="lineO"/>
+      <path d="M-105 78 L-30 -20 L40 75 L90 -10 L130 75" class="thinO"/>
+      <circle cx="-130" cy="86" r="7" class="nodeO pulse"/>
+      <circle cx="-75" cy="-45" r="8" class="nodeO pulse"/>
+      <circle cx="-15" cy="72" r="6" class="nodeO pulse"/>
+      <circle cx="42" cy="-86" r="8" class="nodeO pulse"/>
+      <circle cx="100" cy="75" r="7" class="nodeO pulse"/>
+      <circle cx="145" cy="-42" r="7" class="nodeO pulse"/>
+    </g>
+    <path d="M726 475 H1195" class="thinO scan"/>
+  </g>
+
+  <g class="floatA">
+    <rect x="1310" y="250" width="520" height="265" rx="28" class="panelB"/>
+    <text x="1346" y="302" class="font label">Proof Routing Graph</text>
+    <text x="1346" y="330" class="font small">Evidence propagation routes</text>
+    <g transform="translate(1570 392)">
+      <circle cx="0" cy="0" r="82" fill="none" stroke="#ff7a18" stroke-width="2" opacity=".65" filter="url(#glowOrange)"/>
+      <circle cx="0" cy="0" r="48" fill="none" stroke="#00d8ff" stroke-width="2" opacity=".55" filter="url(#glowBlue)"/>
+      <path d="M0 -82 C80 -20,55 72,0 82 C-74 46,-82 -45,0 -82" class="lineO"/>
+      <circle cx="0" cy="-82" r="7" class="nodeO pulse"/>
+      <circle cx="82" cy="0" r="6" class="nodeO pulse"/>
+      <circle cx="0" cy="82" r="7" class="nodeO pulse"/>
+      <circle cx="-82" cy="0" r="6" class="nodeB pulse"/>
+    </g>
+    <path d="M1336 475 H1805" class="thinB scan"/>
+  </g>
+
+  <g class="floatB">
+    <rect x="90" y="610" width="520" height="285" rx="28" class="panelB"/>
+    <text x="126" y="662" class="font label">Continuity Graph</text>
+    <text x="126" y="690" class="font small">Failure wave returns to runtime memory</text>
+    <g transform="translate(350 768)">
+      <path d="M-170 25 C-70 -95,65 115,180 -30" class="lineB"/>
+      <path d="M-165 70 C-60 -20,70 40,175 75" class="thinB"/>
+      <circle cx="-170" cy="25" r="7" class="nodeB pulse"/>
+      <circle cx="-80" cy="-38" r="6" class="nodeB pulse"/>
+      <circle cx="0" cy="12" r="8" class="nodeB pulse"/>
+      <circle cx="90" cy="62" r="7" class="nodeB pulse"/>
+      <circle cx="180" cy="-30" r="7" class="nodeB pulse"/>
+    </g>
+    <path d="M116 860 H585" class="thinB scan"/>
+  </g>
+
+  <g class="floatA">
+    <rect x="700" y="610" width="520" height="285" rx="28" class="panelO"/>
+    <text x="736" y="662" class="font label">Optimization Mesh</text>
+    <text x="736" y="690" class="font small">Constraint compression and route economy</text>
+    <g transform="translate(960 768)">
+      <path d="M-150 65 L-80 -78 L10 42 L78 -90 L150 62 L30 85 L-120 -5 Z" class="lineO"/>
+      <path d="M-150 65 C-25 -35,45 20,150 62" class="thinB"/>
+      <circle cx="-150" cy="65" r="7" class="nodeO pulse"/>
+      <circle cx="-80" cy="-78" r="7" class="nodeB pulse"/>
+      <circle cx="10" cy="42" r="6" class="nodeO pulse"/>
+      <circle cx="78" cy="-90" r="8" class="nodeB pulse"/>
+      <circle cx="150" cy="62" r="7" class="nodeO pulse"/>
+      <circle cx="30" cy="85" r="6" class="nodeB pulse"/>
+    </g>
+    <path d="M726 860 H1195" class="thinO scan"/>
+  </g>
+
+  <g class="floatB">
+    <rect x="1310" y="610" width="520" height="285" rx="28" class="panelO"/>
+    <text x="1346" y="662" class="font label">Hybrid Compute Graph</text>
+    <text x="1346" y="690" class="font small">QBAIX compute branch pressure map</text>
+    <g transform="translate(1570 768)">
+      <path d="M-170 -40 C-100 -95,-10 -30,70 -82 C120 -45,158 18,170 78" class="lineO"/>
+      <path d="M-165 55 C-70 10,20 95,170 22" class="lineB"/>
+      <circle cx="-170" cy="-40" r="7" class="nodeO pulse"/>
+      <circle cx="-80" cy="-72" r="7" class="nodeB pulse"/>
+      <circle cx="10" cy="-30" r="6" class="nodeO pulse"/>
+      <circle cx="70" cy="-82" r="8" class="nodeB pulse"/>
+      <circle cx="170" cy="78" r="7" class="nodeO pulse"/>
+      <circle cx="170" cy="22" r="6" class="nodeB pulse"/>
+    </g>
+    <path d="M1336 860 H1805" class="thinO scan"/>
+  </g>
+
+  <!-- central faint reactor connector -->
+  <g opacity=".45">
+    <path d="M610 385 C740 500,850 535,960 540 C1080 545,1190 500,1310 385" class="lineB"/>
+    <path d="M610 750 C740 635,850 585,960 580 C1080 575,1190 635,1310 750" class="lineO"/>
+  </g>
+
+  <text x="72" y="1015" class="font micro">MANDALE-OS • RUNTIME GRAPH WALL • PATTERN → EXECUTION → PROOF → CONTINUITY → COMPUTE</text>
+</svg>
