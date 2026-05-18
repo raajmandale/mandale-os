@@ -43,7 +43,7 @@
 
 | Surface | Link |
 |---|---|
-| 🚀 Runtime Demo Surface | https://raajmandale.github.io/mandale-os/demo/Mandale-OS-demo.html |
+| 🚀 Runtime Demo Surface | https://raajmandale.github.io/mandale-os/demo/ |
 | 👤 Founder Website | https://raajmandale.in |
 | 🧠 ORCID | https://orcid.org/0009-0005-9810-1655 |
 | 📚 Wikidata | https://www.wikidata.org/wiki/Q139570902 |
@@ -147,8 +147,7 @@ QBAIX Compute Branch
 ```
 
 ---
-
-# ⚡ Execution Memory Reactor
+### ⚡ Execution Memory Reactor
 
 <p align="center">
   <img src="docs/assets/SVG/03_Mandale-OS_Execution_Lifecycle_Reactor.svg" width="100%" alt="Execution Memory Reactor">
@@ -157,7 +156,22 @@ QBAIX Compute Branch
 The original **M-OS MEE — Execution Memory Reactor** remains the proof-engine core of this ecosystem.
 
 ---
+## Reactor Flow
 
+```text
+RUN → SIGNATURE → ROUTE → REUSE → PROVE
+```
+
+---
+## Research Areas
+
+- signature-driven workload routing
+- execution memory persistence
+- structural reuse detection
+- proof-state transitions
+- benchmark evidence generation
+
+---
 ## Reactor Flow
 
 ```text
@@ -291,17 +305,26 @@ The original MEE branch includes benchmark and proof surfaces for:
 | Failure Cases | Documented |
 
 ---
+### 🚀 Demo Surface
 
-# 🚀 Demo Surface
+<div align="center">
 
-Open the runtime showcase:
+[![OPEN DEMO](https://img.shields.io/badge/OPEN-RUNTIME%20DEMO-0ea5e9?style=for-the-badge)](https://raajmandale.github.io/mandale-os/demo/)
 
-```text
-https://raajmandale.github.io/mandale-os/demo/Mandale-OS-demo.html
-```
+</div>
 
 ---
+The cinematic runtime demo explains:
 
+- Mandale-OS doctrine
+- runtime architecture
+- execution lifecycle
+- runtime graph intelligence
+- ecosystem constellation
+- QBAIX compute relation
+- founder/research identity
+
+---
 ## Demo Explains
 
 - Mandale-OS doctrine
@@ -312,34 +335,23 @@ https://raajmandale.github.io/mandale-os/demo/Mandale-OS-demo.html
 - founder/research identity
 
 ---
-
 # 🎬 Visual Runtime Assets
 
-All cinematic runtime assets are stored under:
-
-```text
-docs/assets/SVG/
-```
-
-Includes:
-
-- runtime topology graphs
-- execution lifecycle reactors
-- runtime graph intelligence motion
-- ecosystem constellation visuals
-- QBAIX compute motion surfaces
-- cinematic runtime GIF demonstrations
-
-These assets serve as:
-
-- runtime benchmark surfaces
-- visual execution maps
-- ecosystem identity layers
-- research presentation infrastructure
+<p align="center">
+  <img src="docs/assets/SVG/mandale-os-runtime-graphs.gif" width="100%" alt="Mandale-OS Runtime Graph Intelligence">
+</p>
 
 ---
+<div align="center">
 
-# 🗂️ Repository Structure
+[![SVG](https://img.shields.io/badge/SVG-RUNTIME%20ASSETS-111827?style=for-the-badge)](docs/assets/SVG/)
+[![GRAPHS](https://img.shields.io/badge/GRAPHS-RUNTIME%20INTELLIGENCE-2563eb?style=for-the-badge)](docs/assets/SVG/05_Mandale-OS_Runtime_Graphs.svg)
+[![MOTION](https://img.shields.io/badge/MOTION-CINEMATIC%20SURFACES-f97316?style=for-the-badge)](docs/assets/SVG/mandale-os-runtime-graphs.gif)
+
+</div>
+
+---
+## 🗂️ Repository Structure
 
 ```text
 mandale-os/
