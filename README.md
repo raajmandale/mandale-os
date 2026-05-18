@@ -12,7 +12,24 @@
 </p>
 
 ---
+<div align="center">
 
+[![LIVE](https://img.shields.io/badge/LIVE-REACTOR-1f2937?style=for-the-badge)](https://github.com/raajmandale/mandale-os)
+[![DEMO](https://img.shields.io/badge/DEMO-RUNTIME%20SURFACE-0ea5e9?style=for-the-badge)](https://raajmandale.github.io/mandale-os/demo/Mandale-OS-demo.html)
+[![RESEARCH](https://img.shields.io/badge/RESEARCH-RUNTIME%20INTELLIGENCE-2563eb?style=for-the-badge)](https://github.com/raajmandale/mandale-os)
+[![FOUNDER](https://img.shields.io/badge/FOUNDER-RAAJ%20MANDALE-111827?style=for-the-badge)](https://raajmandale.in)
+
+<br>
+
+[![CORE](https://img.shields.io/badge/MANDALE--OS-RUNTIME%20CORE-06b6d4?style=for-the-badge)](https://github.com/raajmandale/mandale-os)
+[![MEE](https://img.shields.io/badge/MEE-EXECUTION%20REACTOR-f97316?style=for-the-badge)](https://github.com/raajmandale/mos-mee-execution-reactor)
+[![PPE](https://img.shields.io/badge/PPE-PATTERN%20PROOF%20ENGINE-4f46e5?style=for-the-badge)](https://github.com/raajmandale/M-OS_PPE)
+[![PARAMETER](https://img.shields.io/badge/PARAMETER-GOLF-374151?style=for-the-badge)](https://github.com/raajmandale/mos-parameter-golf)
+[![XLIFELINE](https://img.shields.io/badge/XLIFELINE-CONTINUITY%20RUNTIME-0284c7?style=for-the-badge)](https://github.com/raajmandale/XLifelineAI)
+
+</div>
+
+---
 ## 🌐 Ecosystem Surface
 
 | Surface | Link |
@@ -26,21 +43,17 @@
 | 💻 GitHub Profile | https://github.com/raajmandale |
 
 ---
+### 🧩 Related M-OS Ecosystem Repositories
 
-## 🧩 Related Ecosystem Repositories
-
-| Repository | Purpose |
+| Repository | Runtime Branch |
 |---|---|
-| ⚡ mandale-os | Root Runtime Intelligence Ecosystem |
-| 🧠 mos-mee-execution-reactor | Execution Memory Reactor |
-| 🔬 M-OS PPE | Pattern Proof Engine |
-| 🧬 mos-parameter-golf | Runtime Optimization Research |
-| 🌐 XLifelineAI | Continuity Runtime Research |
-| 🖥️ QBAIX | Hybrid Compute Infrastructure |
-| 🛡️ XPADI | Survivability Runtime Direction |
+| ⚡ [mandale-os](https://github.com/raajmandale/mandale-os) | Root Runtime Intelligence Ecosystem |
+| 🧠 [mos-mee-execution-reactor](https://github.com/raajmandale/mos-mee-execution-reactor) | Execution Memory Reactor |
+| 🔬 [M-OS PPE — Pattern Proof Engine](https://github.com/raajmandale/M-OS_PPE) | Proof Runtime Branch |
+| 🧬 [mos-parameter-golf](https://github.com/raajmandale/mos-parameter-golf) | Runtime Optimization Research |
+| 🌐 [XLifelineAI](https://github.com/raajmandale/XLifelineAI) | Continuity Runtime Research |
 
 ---
-
 <p align="center">
 
 ![status](https://img.shields.io/badge/status-Research%20Runtime-blue)
