@@ -22,13 +22,6 @@
 
 <br>
 
-[![ORCID](https://img.shields.io/badge/ORCID-RESEARCH%20IDENTITY-a3e635?style=for-the-badge)](https://orcid.org/0009-0005-9810-1655)
-[![WIKIDATA](https://img.shields.io/badge/WIKIDATA-Q139570902-0f172a?style=for-the-badge)](https://www.wikidata.org/wiki/Q139570902)
-[![OPENALEX](https://img.shields.io/badge/OPENALEX-A5127026877-334155?style=for-the-badge)](https://openalex.org/A5127026877)
-[![ZENODO](https://img.shields.io/badge/ZENODO-QBAIX%20RESEARCH-1d4ed8?style=for-the-badge)](https://zenodo.org/communities/qbaix)
-
-<br>
-
 [![CORE](https://img.shields.io/badge/MANDALE--OS-RUNTIME%20CORE-06b6d4?style=for-the-badge)](https://github.com/raajmandale/mandale-os)
 [![MEE](https://img.shields.io/badge/MEE-EXECUTION%20REACTOR-f97316?style=for-the-badge)](https://github.com/raajmandale/mos-mee-execution-reactor/tree/ppe-v2)
 [![PPE](https://img.shields.io/badge/PPE-PROOF%20RUNTIME-4f46e5?style=for-the-badge)](https://github.com/raajmandale/M-OS_PPE)
@@ -38,7 +31,6 @@
 </div>
 
 ---
-
 # 🌐 Runtime Civilization Surface
 
 | Surface | Link |
@@ -52,8 +44,7 @@
 | 💻 GitHub Profile | https://github.com/raajmandale |
 
 ---
-
-# 🧩 Related M-OS Ecosystem Repositories
+## 🧩 Related M-OS Ecosystem Repositories
 
 | Repository | Runtime Branch |
 |---|---|
@@ -337,9 +328,45 @@ The cinematic runtime demo explains:
 ---
 # 🎬 Visual Runtime Assets
 
+All cinematic runtime assets are stored under:
+
+```text
+docs/assets/SVG/
+```
+---
+
 <p align="center">
-  <img src="docs/assets/SVG/mandale-os-runtime-graphs.gif" width="100%" alt="Mandale-OS Runtime Graph Intelligence">
+  <img src="https://raw.githubusercontent.com/raajmandale/mandale-os/main/docs/assets/SVG/mandale-os-runtime-graphs.gif" width="100%" alt="Mandale-OS Runtime Graph Intelligence">
 </p>
+
+---
+<div align="center">
+
+[![SVG](https://img.shields.io/badge/SVG-RUNTIME%20ASSETS-111827?style=for-the-badge)](docs/assets/SVG/)
+[![GRAPHS](https://img.shields.io/badge/GRAPHS-RUNTIME%20INTELLIGENCE-2563eb?style=for-the-badge)](https://github.com/raajmandale/mandale-os/tree/main/docs/assets/SVG)
+[![MOTION](https://img.shields.io/badge/MOTION-CINEMATIC%20SURFACES-f97316?style=for-the-badge)](https://github.com/raajmandale/mandale-os/blob/main/docs/assets/SVG/mandale-os-runtime-graphs.gif)
+
+</div>
+
+---
+Includes:
+
+- runtime topology graphs
+- execution lifecycle reactors
+- runtime graph intelligence motion
+- ecosystem constellation visuals
+- QBAIX compute motion surfaces
+- cinematic runtime GIF demonstrations
+
+---
+These assets serve as:
+
+- runtime visualization layers
+- benchmark presentation surfaces
+- architecture storytelling media
+- execution topology explainers
+- public research presentation assets
+- ecosystem identity surfaces
 
 ---
 <div align="center">
