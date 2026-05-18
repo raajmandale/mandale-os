@@ -1,290 +1,164 @@
 <p align="center">
-  <img src="docs/assets/SVG/mandale_os_banner.gif" width="100%" alt="Mandale-OS Runtime Ecosystem">
+  <img src="docs/assets/SVG/mandale_os_banner.gif" width="100%" alt="Mandale-OS Runtime Intelligence Ecosystem">
 </p>
 
-<h1 align="center">Mandale-OS Runtime Ecosystem</h1>
+<h1 align="center">Mandale-OS</h1>
 
 <p align="center">
-  <b>Runtime Intelligence Civilization</b><br>
-  Pattern cognition • Execution routing • Proof intelligence • Continuity runtime • Hybrid compute orchestration
+  <b>Runtime Intelligence Ecosystem</b><br>
+  Pattern cognition • Execution memory • Proof intelligence • Continuity runtime • QBAIX hybrid compute
 </p>
 
 <p align="center">
 
-![status](https://img.shields.io/badge/status-Runtime%20Research-blue)
+![status](https://img.shields.io/badge/status-Research%20Runtime-blue)
 ![core](https://img.shields.io/badge/core-Mandale--OS-cyan)
 ![engine](https://img.shields.io/badge/engine-Execution%20Memory%20Reactor-orange)
-![mode](https://img.shields.io/badge/mode-Pattern%20Runtime-green)
-![ecosystem](https://img.shields.io/badge/ecosystem-QBAIX%20Connected-lightgrey)
+![branch](https://img.shields.io/badge/QBAIX-Compute%20Branch-lightgrey)
 ![license](https://img.shields.io/badge/license-MIT-white)
 
 </p>
 
 ---
-### 🌌 What is Mandale-OS?
-Mandale-OS is a **runtime intelligence ecosystem** exploring a future where execution systems become:
 
-* 🧠 pattern-aware
-* 🔀 routing-aware
-* 📡 proof-aware
-* ♻️ reuse-aware
-* 🛡️ continuity-aware
-* ⚡ consequence-aware
+## 🌌 What is Mandale-OS?
 
-Traditional systems repeatedly execute workloads as isolated events.
-
-Mandale-OS investigates whether execution systems can instead:
+**Mandale-OS** is a runtime intelligence ecosystem exploring a future where execution systems can understand, route, prove, reuse, and continue execution instead of treating every workload as isolated and new.
 
 ```text
-UNDERSTAND → ROUTE → EXECUTE → PROVE → CONTINUE
-```
+UNDERSTAND → ROUTE → EXECUTE → PROVE → CONTINUE → EVOLVE
 
-The ecosystem combines:
+Mandale-OS is not a Windows/Linux replacement.
+It is a research runtime layer for:
 
-* execution memory
-* runtime topology
-* proof intelligence
-* pattern graph systems
-* continuity runtime behavior
-* hybrid compute orchestration
-* execution reuse research
-
----
-### 🧭 Core Runtime Doctrine
-
-```text
+🧠 Pattern-aware execution
+🔀 Runtime routing
+⚡ Execution memory
+📡 Proof intelligence
+♻️ Continuity-aware runtime behavior
+🖥️ QBAIX hybrid compute realization
+🧭 Core Runtime Doctrine
 Execution does not always need to start from zero.
-```
-Mandale-OS explores whether known execution structures can be:
 
-* recognized
-* routed
-* reused
-* verified
-* evolved
+Traditional runtimes execute workloads repeatedly.
 
-instead of recomputed blindly.
+Mandale-OS investigates whether a runtime can:
 
----
-## ⚙️ Runtime Civilization Flow
-
-```text
-INPUT
+recognize repeated execution structures
+route known workload families
+reuse execution memory
+generate proof-state transitions
+continue under failure
+evolve from prior execution patterns
+🏛️ Runtime Architecture
+<p align="center"> <img src="docs/assets/SVG/02_Mandale-OS_Architectur.svg" width="100%" alt="Mandale-OS Architecture"> </p>
+Intent
   ↓
-PATTERN
-  ↓
-ROUTING
-  ↓
-EXECUTION
-  ↓
-PROOF
-  ↓
-CONTINUITY
-  ↓
-EVOLUTION
-```
-
----
-### 🌐 Runtime Ecosystem Surface
-
-<p align="center">
-  <img src="docs/assets/SVG/04_Mandale-OS_Ecosystem.svg" width="100%" alt="Mandale-OS Ecosystem">
-</p>
-
-Mandale-OS combines multiple runtime-intelligence layers into one ecosystem.
-
-| Layer                 | Purpose                                         |
-| --------------------- | ----------------------------------------------- |
-| 🧠 Pattern Cognition  | Structural understanding and intent recognition |
-| 🔀 Runtime Routing    | Intelligent execution direction                 |
-| ⚡ Execution Reactor   | Signature-aware workload execution              |
-| 📡 Proof Layer        | Verification and measurable evidence            |
-| ♻️ Continuity Runtime | Runtime persistence and survivability           |
-| 🚀 Optimization Layer | Reuse and execution efficiency                  |
-| 🖥️ QBAIX Compute     | Commercial hybrid compute branch                |
-
----
-### ⚡ Execution Memory Reactor (MEE)
-
-<p align="center">
-  <img src="docs/assets/SVG/03_Mandale-OS_Execution_Lifecycle_Reactor.svg" width="100%" alt="Execution Reactor">
-</p>
-
-M-OS MEE (Execution Memory Reactor) is the **execution-proof branch** of the ecosystem.
-
-It investigates whether runtime systems can remember structural workload patterns and route repeated execution toward reusable pathways.
-
-```text
-RUN → SIGNATURE → ROUTE → REUSE → PROVE
-```
-
-MEE explores:
-
-* 🧩 signature routing
-* 🧠 execution memory persistence
-* 🔁 structural reuse
-* 📡 proof-state transitions
-* 📊 measurable reuse evidence
-* ⚡ consequence-aware execution
-
----
-### 🕸️ Runtime Graph Intelligence
-
-<p align="center">
-  <img src="docs/assets/SVG/mandale_runtime_graphs.gif" width="100%" alt="Runtime Graph Intelligence">
-</p>
-
-Mandale-OS treats runtime graphs as a **system language**.
-
-The graph layer investigates:
-
-| Graph                    | Meaning               |
-| ------------------------ | --------------------- |
-| 🧠 Pattern Graph         | Intent recognition    |
-| 🔀 Routing Graph         | Execution pathways    |
-| 📡 Proof Graph           | Evidence movement     |
-| ♻️ Continuity Graph      | Runtime survivability |
-| 🖥️ Hybrid Compute Graph | QBAIX orchestration   |
-
----
-### 🌌 Runtime Topology
-
-<p align="center">
-  <img src="docs/assets/SVG/08_Mandale-OS_Runtime_Topology_Graph.svg" width="100%" alt="Runtime Topology">
-</p>
-
-The topology layer visualizes how runtime systems evolve through:
-
-* intent
-* memory
-* routing
-* execution
-* proof
-* continuity
-* optimization
-
-rather than isolated stateless execution.
-
----
-### 🏛️ Runtime Architecture
-
-<p align="center">
-  <img src="docs/assets/SVG/02_Mandale-OS_Architectur.svg" width="100%" alt="Mandale-OS Architecture">
-</p>
-
-Mandale-OS architecture connects:
-
-```text
 Pattern Cognition
-        ↓
+  ↓
 Runtime Routing
-        ↓
+  ↓
 Execution Reactor
-        ↓
+  ↓
 Proof Intelligence
-        ↓
+  ↓
 Continuity Runtime
-        ↓
+  ↓
 Optimization Layer
-        ↓
+  ↓
 QBAIX Compute Branch
-```
+⚡ Execution Memory Reactor
+<p align="center"> <img src="docs/assets/SVG/03_Mandale-OS_Execution_Lifecycle_Reactor.svg" width="100%" alt="Execution Memory Reactor"> </p>
 
----
-### 📊 Benchmark + Proof Layer
+The original M-OS MEE — Execution Memory Reactor remains the proof-engine core of this ecosystem.
 
-Mandale-OS includes measurable execution-proof experiments inherited from the original MEE branch.
+RUN → SIGNATURE → ROUTE → REUSE → PROVE
 
-The benchmark layer investigates:
+It explores:
 
-* reuse detection
-* signature recall
-* persistence behavior
-* routing confidence
-* proof-state generation
-* structural execution similarity
+signature-driven workload routing
+execution memory persistence
+structural reuse detection
+proof-state transitions
+benchmark evidence generation
+🕸️ Runtime Graph Intelligence
+<p align="center"> <img src="docs/assets/SVG/mandale_runtime_graphs.gif" width="100%" alt="Runtime Graph Intelligence"> </p>
 
-### Example measured surfaces
+Mandale-OS treats runtime graphs as the system language.
 
-| Signal                | Example    |
-| --------------------- | ---------- |
-| 🔁 Reuse Match        | 88–91%     |
-| 📡 Recall Stability   | High       |
-| ⚡ Saved Time          | Measurable |
-| 🧠 Routing Confidence | Stable     |
-| 📋 Failure Cases      | Documented |
+Graph	Meaning
+Pattern Graph	Intent recognition and structural similarity
+Routing Graph	Execution pathway selection
+Proof Graph	Evidence and verification movement
+Continuity Graph	Runtime survivability and persistence
+Hybrid Compute Graph	QBAIX compute orchestration
+🌐 Ecosystem Constellation
+<p align="center"> <img src="docs/assets/SVG/04_Mandale-OS_Ecosystem.svg" width="100%" alt="Mandale-OS Ecosystem"> </p>
 
----
-## 🖥️ QBAIX Compute Branch
+Mandale-OS connects runtime research branches into one ecosystem:
 
-<p align="center">
-  <img src="docs/assets/SVG/qbaix_architecture_motion.gif" width="100%" alt="QBAIX Compute">
-</p>
+Layer	Role
+Mandale-OS	Root runtime intelligence ecosystem
+MEE	Execution memory reactor
+PPE-v2	Proof and verification branch
+XLifelineAI	Continuity runtime branch
+mos-parameter-golf	Optimization and compact execution research
+QBAIX	Commercial hybrid compute branch
+🖥️ QBAIX Compute Branch
+<p align="center"> <img src="docs/assets/SVG/qbaix_architecture_motion.gif" width="100%" alt="QBAIX Hybrid Compute"> </p>
 
-QBAIX represents the **commercial hybrid-compute realization branch** connected to Mandale-OS runtime intelligence.
+QBAIX is the commercial compute realization branch connected to Mandale-OS.
 
-QBAIX focuses on:
+Mandale-OS provides the runtime intelligence layer.
+QBAIX provides the hybrid compute infrastructure direction.
 
-* AI-ready infrastructure
-* accelerator-aware execution
-* runtime-driven orchestration
-* CPU/GPU integration
-* hybrid compute systems
-* infrastructure-scale execution surfaces
-
-### Relationship
-
-```text
 Mandale-OS = Runtime Intelligence Layer
+QBAIX = Commercial Hybrid Compute Branch
+📊 Benchmark + Proof Layer
 
-QBAIX = Compute Realization Layer
-```
+The original MEE branch includes benchmark and proof surfaces for:
 
----
-### 🎛️ Visual Runtime Surface
+routing benchmark
+reuse metrics
+signature recall
+persistence trials
+failure cases
+benchmark evidence
 
-<p align="center">
-  <img src="docs/assets/SVG/05_Mandale-OS_Runtime_Graphs.svg" width="100%" alt="Runtime Graph Surface">
-</p>
+Example proof signals:
 
-The visual ecosystem explores runtime systems as:
+Signal	Example
+Reuse match	88–91%
+Saved time	Measurable
+Recall	Stable
+Confidence	High
+Failure cases	Documented
+🚀 Demo Surface
 
-* reactor civilizations
-* execution nervous systems
-* topology networks
-* runtime constellations
-* continuity-aware infrastructure
-* proof-routing surfaces
+Open the runtime showcase:
 
----
-### 🧪 Interactive Demo Surface
-
-```text
 demo/Mandale-OS-demo.html
-```
 
-The demo surface combines:
+The demo explains:
 
-* 🌌 ecosystem visualization
-* 🧠 runtime doctrine
-* 🕸️ topology graphs
-* ⚡ execution lifecycle surfaces
-* 🖥️ QBAIX compute mapping
-* 📡 proof-routing concepts
-
----
-### 🗂️ Repository Structure
-
-```bash
-mos_repo_runtime/
+Mandale-OS doctrine
+architecture ecosystem
+runtime graph intelligence
+execution lifecycle
+QBAIX compute relation
+founder/research identity
+🗂️ Repository Structure
+mandale-os/
 │
 ├── benchmarks/
 ├── demo/
+│   └── Mandale-OS-demo.html
+│
 ├── docs/
 │   ├── assets/
 │   │   └── SVG/
 │   │       ├── *.svg
-│   │       ├── *.gif
+│   │       └── *.gif
 │   │
 │   ├── architecture.md
 │   ├── adapter_api.md
@@ -300,97 +174,68 @@ mos_repo_runtime/
 ├── README.md
 ├── requirements.txt
 └── pyproject.toml
-```
+🔗 Repository Ecosystem
+Repository	Role
+mandale-os	Root runtime ecosystem
+mos-mee-execution-reactor	Execution Memory Reactor
+ppe-v2	Proof execution branch
+XLifelineAI	Continuity runtime
+mos-parameter-golf	Runtime optimization lab
+❌ What Mandale-OS is not
 
----
-### 🔭 Relation to Broader Ecosystem
+Mandale-OS is not:
 
-```text
-Mandale-OS
-    ↓
-Pattern Runtime
-    ↓
-Execution Memory Reactor
-    ↓
-Proof Intelligence
-    ↓
-Continuity Runtime
-    ↓
-QBAIX Hybrid Compute
-```
+a consumer operating system
+a Linux distribution
+a Windows replacement
+a production scheduler
+a finished AI runtime
+a benchmark claim against enterprise systems
+✅ What Mandale-OS is
 
----
-## ❌ What this is NOT
+Mandale-OS is:
 
-Mandale-OS is NOT:
+a runtime intelligence research surface
+a pattern-routing ecosystem
+an execution-memory exploration system
+a proof-runtime architecture
+a continuity-aware runtime direction
+a hybrid compute orchestration concept
+a visual runtime civilization
+👨‍💻 Founder & Research Direction
 
-* a Windows/Linux replacement
-* a finished operating system
-* a production scheduler
-* a finalized AI runtime
-* a benchmark claim against enterprise systems
-
-This repository is a **runtime research ecosystem**.
-
----
-
-## ✅ What this IS
-
-Mandale-OS IS:
-
-* 🧠 a runtime intelligence research surface
-* ⚡ a pattern-routing ecosystem
-* 🔁 an execution-memory exploration system
-* 📡 a proof-runtime architecture
-* ♻️ a continuity-aware runtime direction
-* 🖥️ a hybrid compute orchestration concept
-* 🌌 a visual runtime civilization
-
----
-
-# 👨‍💻 Research Identity
-
-## Raaj Mandale
-
+Raaj Mandale
 Founder & Systems Architect
 Eranest Technoware Pvt Ltd
 
-### Research Domains
+Research direction:
 
-* Mandale-OS
-* QBAIX
-* XPADI
-* Runtime Systems
-* Survivability Infrastructure
-* Execution Intelligence
-* Hybrid Compute Architecture
-
----
-### 🔗 Research Links
-
-| Surface  | Link                                     |
-| -------- | ---------------------------------------- |
-| GitHub   | https://github.com/raajmandale           |
-| ORCID    | https://orcid.org/0009-0005-9810-1655    |
-| Wikidata | https://www.wikidata.org/wiki/Q139570902 |
-| OpenAlex | https://openalex.org/A5127026877         |
-| Zenodo   | https://zenodo.org/communities/qbaix     |
-
----
-
-## 📚 Citation
-
-```bibtex
-@software{mandale_runtime_ecosystem_2026,
+Runtime Intelligence
+Pattern Execution
+Execution Memory
+Continuity Systems
+Proof Runtime
+Hybrid Compute
+AI Infrastructure
+Cyber Survivability
+🔗 Research Identity
+Surface	Link
+GitHub	https://github.com/raajmandale
+ORCID	https://orcid.org/0009-0005-9810-1655
+Wikidata	https://www.wikidata.org/wiki/Q139570902
+OpenAlex	https://openalex.org/A5127026877
+QBAIX / Zenodo	https://zenodo.org/communities/qbaix
+Website	https://raajmandale.in
+📚 Citation
+@software{mandale_os_runtime_ecosystem_2026,
   author = {Raaj Mandale},
-  title = {Mandale-OS Runtime Ecosystem},
+  title = {Mandale-OS: Runtime Intelligence Ecosystem},
   year = {2026},
-  url = {https://github.com/raajmandale},
-  version = {Research Runtime Surface}
+  url = {https://github.com/raajmandale/mandale-os},
+  note = {Runtime intelligence research ecosystem integrating execution memory, proof intelligence, continuity runtime, and QBAIX hybrid compute}
 }
-```
-
----
-# 📜 License
+📜 License
 
 MIT
+
+<p align="center"> <b>Mandale-OS</b><br> Intelligence is the infrastructure. Execution is the purpose. Continuity is the promise. </p> ```
