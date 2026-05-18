@@ -1,0 +1,126 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+  <radialGradient id="bg" cx="50%" cy="46%" r="84%">
+    <stop offset="0%" stop-color="#123457"/>
+    <stop offset="46%" stop-color="#071322"/>
+    <stop offset="100%" stop-color="#02050b"/>
+  </radialGradient>
+
+  <radialGradient id="coreBlue" cx="50%" cy="45%" r="70%">
+    <stop offset="0%" stop-color="#1af4ff" stop-opacity=".85"/>
+    <stop offset="38%" stop-color="#008cff" stop-opacity=".36"/>
+    <stop offset="100%" stop-color="#02101d" stop-opacity=".15"/>
+  </radialGradient>
+
+  <radialGradient id="coreOrange" cx="50%" cy="45%" r="70%">
+    <stop offset="0%" stop-color="#ffb04a" stop-opacity=".86"/>
+    <stop offset="45%" stop-color="#ff7418" stop-opacity=".38"/>
+    <stop offset="100%" stop-color="#1a0802" stop-opacity=".08"/>
+  </radialGradient>
+
+  <linearGradient id="bo" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#00e5ff"/>
+    <stop offset="46%" stop-color="#148cff"/>
+    <stop offset="100%" stop-color="#ff7a18"/>
+  </linearGradient>
+
+  <linearGradient id="glassBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#9deeff" stop-opacity=".22"/>
+    <stop offset="48%" stop-color="#1f87ff" stop-opacity=".08"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity=".03"/>
+  </linearGradient>
+
+  <linearGradient id="glassOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#ff9d3c" stop-opacity=".24"/>
+    <stop offset="50%" stop-color="#ff7418" stop-opacity=".09"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity=".03"/>
+  </linearGradient>
+
+  <filter id="blueGlow" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="8" result="b"/>
+    <feColorMatrix in="b" type="matrix" values="0 0 0 0 0  0 0 0 0 .82  0 0 0 0 1  0 0 0 .95 0"/>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+  <filter id="orangeGlow" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="8" result="b"/>
+    <feColorMatrix in="b" type="matrix" values="0 0 0 0 1  0 0 0 0 .44  0 0 0 0 .04  0 0 0 .95 0"/>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+  <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+    <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#000000" flood-opacity=".55"/>
+  </filter>
+
+  <style>
+    .font{font-family:Inter,Segoe UI,Arial,sans-serif}
+    .title{font-size:64px;font-weight:900;letter-spacing:-2px;fill:#f8fbff}
+    .subtitle{font-size:22px;font-weight:550;fill:#a9cfff}
+    .micro{font-size:13px;font-weight:800;letter-spacing:2.5px;fill:#7fa8c9}
+    .label{font-size:24px;font-weight:850;fill:#f7fbff}
+    .small{font-size:16px;font-weight:600;fill:#b2c5d6}
+    .glassB{fill:url(#glassBlue);stroke:rgba(40,210,255,.44);stroke-width:1.5;filter:url(#softShadow)}
+    .glassO{fill:url(#glassOrange);stroke:rgba(255,122,24,.48);stroke-width:1.5;filter:url(#softShadow)}
+    .planeB{fill:rgba(10,34,58,.42);stroke:#00d4ff;stroke-width:1.7;filter:url(#blueGlow)}
+    .planeO{fill:rgba(44,24,12,.34);stroke:#ff7a18;stroke-width:1.7;filter:url(#orangeGlow)}
+    .routeB{fill:none;stroke:#00d4ff;stroke-width:2.7;stroke-linecap:round;stroke-dasharray:12 18;animation:dashB 5.8s linear infinite;filter:url(#blueGlow)}
+    .routeO{fill:none;stroke:#ff7a18;stroke-width:2.7;stroke-linecap:round;stroke-dasharray:14 18;animation:dashO 6.4s linear infinite;filter:url(#orangeGlow)}
+    .thinB{fill:none;stroke:#00d4ff;stroke-width:1.1;opacity:.42}
+    .thinO{fill:none;stroke:#ff7a18;stroke-width:1.1;opacity:.42}
+    .orbitB{fill:none;stroke:#00d4ff;stroke-width:1.25;stroke-dasharray:6 13;opacity:.50}
+    .orbitO{fill:none;stroke:#ff7a18;stroke-width:1.25;stroke-dasharray:8 16;opacity:.50}
+    .pulse{animation:pulse 2.8s ease-in-out infinite}
+    .spin{animation:spin 34s linear infinite;transform-origin:center}
+    .spinR{animation:spinR 58s linear infinite;transform-origin:center}
+    .floatA{animation:floatA 7s ease-in-out infinite}
+    .floatB{animation:floatB 8.5s ease-in-out infinite}
+    .shimmer{animation:shimmer 6s ease-in-out infinite}
+    @keyframes dashB{to{stroke-dashoffset:-210}}
+    @keyframes dashO{to{stroke-dashoffset:220}}
+    @keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}
+    @keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+    @keyframes spinR{from{transform:rotate(360deg)}to{transform:rotate(0deg)}}
+    @keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+    @keyframes floatB{0%,100%{transform:translateY(0)}50%{transform:translateY(12px)}}
+    @keyframes shimmer{0%,100%{opacity:.45}50%{opacity:.95}}
+  </style>
+</defs>
+
+<rect width="1920" height="1080" fill="url(#bg)"/>
+<g opacity=".12">
+  <path d="M0 180H1920 M0 360H1920 M0 540H1920 M0 720H1920 M0 900H1920" stroke="#74bdf2"/>
+  <path d="M240 0V1080 M480 0V1080 M720 0V1080 M960 0V1080 M1200 0V1080 M1440 0V1080 M1680 0V1080" stroke="#74bdf2"/>
+</g>
+<g opacity=".16">
+  <path d="M260 880 C540 690,760 630,960 540 C1160 450,1380 390,1660 210" stroke="#00d4ff" stroke-width="1"/>
+  <path d="M260 210 C540 390,760 450,960 540 C1160 630,1380 690,1660 880" stroke="#ff7a18" stroke-width="1"/>
+</g>
+
+<text x="82" y="105" class="font title">QBAIX Hybrid Compute Branch</text>
+<text x="84" y="156" class="font subtitle">Commercial AI-ready compute realization powered by Mandale-OS runtime intelligence.</text>
+<text x="84" y="194" class="font micro">QBAIX IS A BRANCH • NOT THE ROOT</text>
+
+<g transform="translate(960 570)">
+  <g class="spin"><ellipse rx="700" ry="275" class="orbitB"/></g>
+  <g class="spinR"><ellipse rx="560" ry="215" class="orbitO"/></g>
+  <path d="M-520 -180 L-390 -255 H390 L520 -180 L390 -112 H-390 Z" class="planeB"/>
+  <path d="M-610 -15 L-450 -105 H450 L610 -15 L450 82 H-450 Z" class="planeO"/>
+  <path d="M-520 165 L-390 92 H390 L520 165 L390 235 H-390 Z" class="planeB"/>
+  <text y="-168" text-anchor="middle" class="font label">Mandale-OS Runtime Intelligence</text>
+  <text y="-3" text-anchor="middle" class="font label">QBAIX Hybrid Compute Fabric</text>
+  <text y="181" text-anchor="middle" class="font label">CPU • GPU • Accelerator • Storage</text>
+  <path d="M0 -110 V120" class="routeB"/>
+  <path d="M-280 -75 C-120 -20,120 30,280 95" class="routeO"/>
+</g>
+<g class="floatA"><rect x="115" y="370" width="360" height="120" rx="26" class="glassB"/><text x="155" y="425" class="font label">AI Workloads</text><text x="155" y="456" class="font small">Apps, models, agents.</text></g>
+<g class="floatB"><rect x="1445" y="370" width="360" height="120" rx="26" class="glassO"/><text x="1485" y="425" class="font label">Execution Energy</text><text x="1485" y="456" class="font small">Compute becomes action.</text></g>
+<g class="floatB"><rect x="115" y="745" width="360" height="120" rx="26" class="glassO"/><text x="155" y="800" class="font label">Proof Telemetry</text><text x="155" y="831" class="font small">Evidence from execution.</text></g>
+<g class="floatA"><rect x="1445" y="745" width="360" height="120" rx="26" class="glassB"/><text x="1485" y="800" class="font label">Continuity Runtime</text><text x="1485" y="831" class="font small">Failure-aware recovery.</text></g>
+<path d="M475 430 C620 420,760 465,865 510" class="routeB"/>
+<path d="M1445 430 C1300 420,1160 465,1055 510" class="routeO"/>
+<path d="M475 805 C650 720,790 645,890 600" class="routeO"/>
+<path d="M1445 805 C1270 720,1130 645,1030 600" class="routeB"/>
+<text x="82" y="1015" class="font micro">COMMERCIAL COMPUTE BRANCH • M-OS DECISION FABRIC • QBAIX HARDWARE REALIZATION</text>
+
+</svg>

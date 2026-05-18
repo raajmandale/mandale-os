@@ -1,0 +1,243 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <title>Mandale-OS Architecture Ecosystem — Ultra Glass Reactor Final</title>
+  <desc>Final animated SVG architecture showing Mandale-OS root ecosystem, runtime layers, repo connections, meaning, QBAIX branch, blue-orange semantic motion, and ultra glass 2050 visual style.</desc>
+
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="46%" r="82%">
+      <stop offset="0%" stop-color="#12375d"/>
+      <stop offset="42%" stop-color="#071525"/>
+      <stop offset="100%" stop-color="#02050b"/>
+    </radialGradient>
+
+    <linearGradient id="blueGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8befff" stop-opacity=".25"/>
+      <stop offset="50%" stop-color="#0b84ff" stop-opacity=".09"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity=".025"/>
+    </linearGradient>
+
+    <linearGradient id="orangeGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb65a" stop-opacity=".26"/>
+      <stop offset="50%" stop-color="#ff7818" stop-opacity=".10"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity=".025"/>
+    </linearGradient>
+
+    <linearGradient id="blueOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="47%" stop-color="#168cff"/>
+      <stop offset="100%" stop-color="#ff7a18"/>
+    </linearGradient>
+
+    <radialGradient id="coreGlow" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#22eaff" stop-opacity=".9"/>
+      <stop offset="42%" stop-color="#067dff" stop-opacity=".28"/>
+      <stop offset="100%" stop-color="#06111f" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="orangeGlowRadial" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#ffb24a" stop-opacity=".9"/>
+      <stop offset="42%" stop-color="#ff7418" stop-opacity=".27"/>
+      <stop offset="100%" stop-color="#1a0802" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="glowBlue" x="-90%" y="-90%" width="280%" height="280%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feColorMatrix in="b" type="matrix"
+        values="0 0 0 0 0
+                0 0 0 0 .84
+                0 0 0 0 1
+                0 0 0 .95 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="glowOrange" x="-90%" y="-90%" width="280%" height="280%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feColorMatrix in="b" type="matrix"
+        values="0 0 0 0 1
+                0 0 0 0 .43
+                0 0 0 0 .04
+                0 0 0 .95 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="deepShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#000000" flood-opacity=".58"/>
+    </filter>
+
+    <filter id="fog">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+
+    <style>
+      .font{font-family:Inter,Segoe UI,Arial,sans-serif}
+      .title{font-size:62px;font-weight:900;letter-spacing:-2px;fill:#f8fbff}
+      .subtitle{font-size:22px;font-weight:550;fill:#aad1ff}
+      .micro{font-size:13px;font-weight:850;letter-spacing:2.5px;fill:#83afd1}
+      .label{font-size:22px;font-weight:900;fill:#f8fbff}
+      .small{font-size:14px;font-weight:650;fill:#b8cddd}
+      .mini{font-size:11px;font-weight:800;letter-spacing:1.5px;fill:#91bfe2}
+
+      .panelB{fill:url(#blueGlass);stroke:#00d8ff;stroke-width:1.55;filter:url(#deepShadow)}
+      .panelO{fill:url(#orangeGlass);stroke:#ff7a18;stroke-width:1.55;filter:url(#deepShadow)}
+      .core{fill:rgba(4,18,32,.74);stroke:url(#blueOrange);stroke-width:3.2;filter:url(#glowBlue)}
+
+      .routeB{fill:none;stroke:#00d8ff;stroke-width:2.7;stroke-linecap:round;stroke-dasharray:13 19;animation:flowB 5.5s linear infinite;filter:url(#glowBlue)}
+      .routeO{fill:none;stroke:#ff7a18;stroke-width:2.7;stroke-linecap:round;stroke-dasharray:15 20;animation:flowO 6.2s linear infinite;filter:url(#glowOrange)}
+      .thinB{fill:none;stroke:#00d8ff;stroke-width:1.05;opacity:.34}
+      .thinO{fill:none;stroke:#ff7a18;stroke-width:1.05;opacity:.30}
+      .orbitB{fill:none;stroke:#00d8ff;stroke-width:1.2;stroke-dasharray:7 14;opacity:.48}
+      .orbitO{fill:none;stroke:#ff7a18;stroke-width:1.2;stroke-dasharray:9 16;opacity:.45}
+
+      .nodeB{fill:url(#blueGlass);stroke:#00d8ff;stroke-width:2.1;filter:url(#glowBlue)}
+      .nodeO{fill:url(#orangeGlass);stroke:#ff7a18;stroke-width:2.1;filter:url(#glowOrange)}
+
+      .spin{animation:spin 38s linear infinite;transform-origin:960px 560px}
+      .spinR{animation:spinR 64s linear infinite;transform-origin:960px 560px}
+      .pulse{animation:pulse 2.8s ease-in-out infinite}
+      .floatA{animation:floatA 7.5s ease-in-out infinite}
+      .floatB{animation:floatB 8.5s ease-in-out infinite}
+      .scan{animation:scan 6s ease-in-out infinite}
+      .shimmer{animation:shimmer 5.5s ease-in-out infinite}
+
+      @keyframes flowB{to{stroke-dashoffset:-250}}
+      @keyframes flowO{to{stroke-dashoffset:250}}
+      @keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+      @keyframes spinR{from{transform:rotate(360deg)}to{transform:rotate(0deg)}}
+      @keyframes pulse{0%,100%{opacity:.58;transform:scale(1)}50%{opacity:1;transform:scale(1.06)}}
+      @keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+      @keyframes floatB{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
+      @keyframes scan{0%,100%{opacity:.16;transform:translateY(-18px)}50%{opacity:.7;transform:translateY(18px)}}
+      @keyframes shimmer{0%,100%{opacity:.34}50%{opacity:.9}}
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+
+  <!-- grid and fog -->
+  <g opacity=".12">
+    <path d="M0 180H1920 M0 360H1920 M0 540H1920 M0 720H1920 M0 900H1920" stroke="#7fc7ff"/>
+    <path d="M180 0V1080 M360 0V1080 M540 0V1080 M720 0V1080 M900 0V1080 M1080 0V1080 M1260 0V1080 M1440 0V1080 M1620 0V1080 M1800 0V1080" stroke="#7fc7ff"/>
+  </g>
+  <ellipse cx="960" cy="580" rx="850" ry="430" fill="#00d8ff" opacity=".045" filter="url(#fog)"/>
+  <ellipse cx="1120" cy="590" rx="560" ry="330" fill="#ff7a18" opacity=".04" filter="url(#fog)"/>
+
+  <!-- header -->
+  <text x="72" y="102" class="font title">Mandale-OS Architecture Ecosystem</text>
+  <text x="74" y="153" class="font subtitle">Runtime intelligence root connecting pattern cognition, routing, execution, proof, continuity, optimization, and QBAIX compute.</text>
+  <text x="74" y="191" class="font micro">FINAL ARCHITECTURE • ECOSYSTEM CONNECTION • MEANING LAYER • ULTRA GLASS REACTOR EDITION</text>
+
+  <!-- central reactor orbits -->
+  <g class="spin">
+    <ellipse cx="960" cy="570" rx="620" ry="278" class="orbitB"/>
+    <ellipse cx="960" cy="570" rx="470" ry="212" class="orbitB" transform="rotate(12 960 570)"/>
+  </g>
+  <g class="spinR">
+    <ellipse cx="960" cy="570" rx="740" ry="340" class="orbitO" transform="rotate(-7 960 570)"/>
+    <ellipse cx="960" cy="570" rx="350" ry="160" class="orbitO" transform="rotate(20 960 570)"/>
+  </g>
+
+  <!-- core -->
+  <circle cx="960" cy="570" r="220" fill="url(#coreGlow)" class="pulse"/>
+  <circle cx="960" cy="570" r="145" fill="url(#orangeGlowRadial)" opacity=".66"/>
+  <circle cx="960" cy="570" r="124" class="core"/>
+  <circle cx="960" cy="570" r="72" fill="#071522" stroke="#00d8ff" stroke-width="2.2" filter="url(#glowBlue)"/>
+  <text x="960" y="562" text-anchor="middle" class="font label" style="font-size:32px">M-OS CORE</text>
+  <text x="960" y="596" text-anchor="middle" class="font micro">RUNTIME INTELLIGENCE ROOT</text>
+
+  <!-- top input layer -->
+  <g class="floatA">
+    <path d="M620 230 L700 188 H1220 L1300 230 L1220 272 H700 Z" class="panelB"/>
+    <text x="960" y="232" text-anchor="middle" class="font label">Intelligence Inputs</text>
+    <text x="960" y="258" text-anchor="middle" class="font small">User / Agents • Applications • APIs • Sensors • External Systems</text>
+  </g>
+
+  <!-- left layers -->
+  <g class="floatB">
+    <rect x="95" y="320" width="410" height="118" rx="26" class="panelB"/>
+    <text x="130" y="372" class="font label">Pattern Intelligence</text>
+    <text x="130" y="400" class="font small">Understand intent, classify context, build runtime graph.</text>
+    <text x="130" y="424" class="font mini">Meaning: blue cognition domain</text>
+  </g>
+
+  <g class="floatA">
+    <rect x="105" y="585" width="410" height="118" rx="26" class="panelB"/>
+    <text x="140" y="637" class="font label">Continuity Runtime</text>
+    <text x="140" y="665" class="font small">Failure-aware recovery, memory persistence, lifeline state.</text>
+    <text x="140" y="689" class="font mini">Meaning: execution survives disruption</text>
+  </g>
+
+  <g class="floatB">
+    <rect x="190" y="820" width="390" height="112" rx="26" class="panelB"/>
+    <text x="225" y="870" class="font label">Optimization Lab</text>
+    <text x="225" y="898" class="font small">Context reduction, route economy, compact runtime intelligence.</text>
+  </g>
+
+  <!-- right layers -->
+  <g class="floatA">
+    <rect x="1415" y="320" width="410" height="118" rx="26" class="panelO"/>
+    <text x="1440" y="637" class="font label">Proof &amp; Verification</text>
+    <text x="1450" y="400" class="font small">Decision engine routes work into execution fabric.</text>
+    <text x="1450" y="424" class="font mini">Meaning: intelligence becomes action</text>
+  </g>
+
+  <g class="floatB">
+    <rect x="1405" y="585" width="410" height="118" rx="26" class="panelO"/>
+    <text x="1440" y="637" class="font label">Proof &amp; Verification</text>
+    <text x="1440" y="665" class="font small">Execution emits evidence, attestation, authority state.</text>
+    <text x="1440" y="689" class="font mini">Meaning: orange proof domain</text>
+  </g>
+
+  <g class="floatA">
+    <rect x="1340" y="820" width="390" height="112" rx="26" class="panelO"/>
+    <text x="1375" y="870" class="font label">QBAIX Compute Branch</text>
+    <text x="1375" y="898" class="font small">Commercial hybrid compute realization: CPU/GPU/accelerator.</text>
+  </g>
+
+  <!-- bottom stack -->
+  <g class="floatA">
+    <path d="M640 835 L720 792 H1200 L1280 835 L1200 878 H720 Z" class="panelO"/>
+    <text x="960" y="837" text-anchor="middle" class="font label">Execution Fabric Layer</text>
+    <text x="960" y="863" text-anchor="middle" class="font small">RUN → DETECT → ROUTE → REUSE → PROVE → VERIFY → CONTINUE → EVOLVE</text>
+  </g>
+
+  <!-- route paths from input to core -->
+  <path d="M960 272 C960 350,960 440,960 570" class="routeB"/>
+  <path d="M760 272 C725 380,790 500,960 570" class="routeB"/>
+  <path d="M1160 272 C1195 380,1130 500,960 570" class="routeO"/>
+
+  <!-- side route connections -->
+  <path d="M505 380 C660 420,790 500,850 550 C900 570,935 570,960 570" class="routeB"/>
+  <path d="M515 645 C685 620,800 605,960 570" class="routeB"/>
+  <path d="M580 875 C735 770,840 660,960 570" class="routeB"/>
+
+  <path d="M1415 380 C1255 420,1130 500,1070 550 C1020 570,985 570,960 570" class="routeO"/>
+  <path d="M1405 645 C1235 620,1120 605,960 570" class="routeO"/>
+  <path d="M1340 875 C1185 770,1080 660,960 570" class="routeO"/>
+
+  <!-- execution fabric route -->
+  <path d="M960 570 C950 660,960 735,960 792" class="routeO"/>
+
+  <!-- cross ecosystem meaning routes -->
+  <g class="shimmer">
+    <path d="M300 438 C620 545,740 250,960 570 C1160 860,1380 470,1610 438" class="thinB"/>
+    <path d="M300 703 C620 500,720 840,960 570 C1220 300,1380 735,1610 703" class="thinO"/>
+    <path d="M385 820 C650 620,810 930,960 570 C1115 250,1340 720,1535 820" class="thinB"/>
+  </g>
+
+  <!-- repo/meaning nodes -->
+  <g filter="url(#glowBlue)">
+    <circle cx="300" cy="510" r="8" fill="#00d8ff" class="pulse"/>
+    <circle cx="385" cy="760" r="8" fill="#00d8ff" class="pulse"/>
+    <circle cx="720" cy="320" r="6" fill="#00d8ff" class="pulse"/>
+    <circle cx="840" cy="785" r="6" fill="#00d8ff" class="pulse"/>
+  </g>
+  <g filter="url(#glowOrange)">
+    <circle cx="1620" cy="510" r="8" fill="#ff7a18" class="pulse"/>
+    <circle cx="1535" cy="760" r="8" fill="#ff7a18" class="pulse"/>
+    <circle cx="1200" cy="320" r="6" fill="#ff7a18" class="pulse"/>
+    <circle cx="1080" cy="785" r="6" fill="#ff7a18" class="pulse"/>
+  </g>
+
+  <!-- bottom doctrine bar -->
+  <rect x="72" y="970" width="1776" height="1.4" fill="url(#blueOrange)" opacity=".58"/>
+  <text x="72" y="1015" class="font micro">MANDATORY ARCHITECTURE: MANDALE-OS = ROOT RUNTIME INTELLIGENCE ECOSYSTEM • QBAIX = COMMERCIAL COMPUTE BRANCH • BLUE = INTELLIGENCE • ORANGE = EXECUTION / PROOF</text>
+</svg>

@@ -1,324 +1,396 @@
 <p align="center">
-  <img src="docs/assets/svg/mos_architecture.svg" width="1000">
+  <img src="docs/assets/SVG/mandale_os_banner.gif" width="100%" alt="Mandale-OS Runtime Ecosystem">
 </p>
 
-<h1 align="center">M-OS</h1>
+<h1 align="center">Mandale-OS Runtime Ecosystem</h1>
 
 <p align="center">
-<b>Pattern Runtime for Hybrid Compute</b><br>
-Deterministic execution for CPU / GPU / AI compute pipelines
+  <b>Runtime Intelligence Civilization</b><br>
+  Pattern cognition • Execution routing • Proof intelligence • Continuity runtime • Hybrid compute orchestration
 </p>
 
 <p align="center">
 
-![status](https://img.shields.io/badge/status-research-blue)
-![runtime](https://img.shields.io/badge/runtime-pattern--graph-green)
-![compute](https://img.shields.io/badge/compute-CPU%20%7C%20GPU%20%7C%20AI-purple)
-![version](https://img.shields.io/badge/version-v0.1-orange)
+![status](https://img.shields.io/badge/status-Runtime%20Research-blue)
+![core](https://img.shields.io/badge/core-Mandale--OS-cyan)
+![engine](https://img.shields.io/badge/engine-Execution%20Memory%20Reactor-orange)
+![mode](https://img.shields.io/badge/mode-Pattern%20Runtime-green)
+![ecosystem](https://img.shields.io/badge/ecosystem-QBAIX%20Connected-lightgrey)
+![license](https://img.shields.io/badge/license-MIT-white)
 
 </p>
 
 ---
+### 🌌 What is Mandale-OS?
+Mandale-OS is a **runtime intelligence ecosystem** exploring a future where execution systems become:
 
-# What is M-OS
+* 🧠 pattern-aware
+* 🔀 routing-aware
+* 📡 proof-aware
+* ♻️ reuse-aware
+* 🛡️ continuity-aware
+* ⚡ consequence-aware
 
-M-OS is a **pattern-based runtime system** designed to execute complex computation in a structured and deterministic way.
+Traditional systems repeatedly execute workloads as isolated events.
 
-Instead of writing long procedural pipelines, M-OS represents computation as **patterns connected in a graph**.
+Mandale-OS investigates whether execution systems can instead:
 
-Think of it like:
+```text
+UNDERSTAND → ROUTE → EXECUTE → PROVE → CONTINUE
+```
 
-Traditional systems  
-→ execute commands step-by-step
+The ecosystem combines:
 
-M-OS  
-→ executes **structured patterns of computation**
-
-This approach makes large compute systems easier to reason about and reproduce.
-
----
-
-# Why This Matters
-
-Modern compute systems (AI, HPC, simulation) suffer from:
-
-- complex pipeline orchestration  
-- unpredictable execution order  
-- hardware-specific implementations  
-- difficulty reproducing results  
-
-M-OS introduces a new model where computation is expressed as **Pattern Graphs**.
-
-This enables:
-
-✔ deterministic execution  
-✔ hardware-agnostic compute routing  
-✔ reproducible workflows  
-✔ structured optimization pipelines  
+* execution memory
+* runtime topology
+* proof intelligence
+* pattern graph systems
+* continuity runtime behavior
+* hybrid compute orchestration
+* execution reuse research
 
 ---
+### 🧭 Core Runtime Doctrine
 
-# 🌐 Compute Landscape
+```text
+Execution does not always need to start from zero.
+```
+Mandale-OS explores whether known execution structures can be:
+
+* recognized
+* routed
+* reused
+* verified
+* evolved
+
+instead of recomputed blindly.
+
+---
+## ⚙️ Runtime Civilization Flow
+
+```text
+INPUT
+  ↓
+PATTERN
+  ↓
+ROUTING
+  ↓
+EXECUTION
+  ↓
+PROOF
+  ↓
+CONTINUITY
+  ↓
+EVOLUTION
+```
+
+---
+### 🌐 Runtime Ecosystem Surface
 
 <p align="center">
-<img src="docs/assets/svg/qbaix_compute_positioning_map.svg" width="900">
+  <img src="docs/assets/SVG/04_Mandale-OS_Ecosystem.svg" width="100%" alt="Mandale-OS Ecosystem">
 </p>
 
-The M-OS runtime is designed to operate within modern **hybrid compute architectures**.
+Mandale-OS combines multiple runtime-intelligence layers into one ecosystem.
 
-Traditional HPC systems rely on CPU/GPU clusters with imperative scheduling.  
-M-OS introduces a **pattern-driven runtime layer** that enables structured execution across heterogeneous compute hardware.
-
----
-
-## 🚀 60-Second Quickstart
-
-Get M-OS running in less than a minute.
-
-### 1. Clone the repository
-
-
-git clone https://github.com/raajmandale/mos-runtime.git
-
-cd mos-runtime
-
-
-### 2. Install dependencies
-
-
-pip install -r requirements.txt
-
-
-### 3. Run the demo
-
-
-python cli/mos.py run examples/graph_opt.yaml
-
-
-### Example Output
-
-
-PatternGraph loaded
-Nodes: 12
-Execution backend: CPU
-
-Running scheduler...
-Executing nodes...
-
-Transform ✓
-Search ✓
-Optimize ✓
-Simulate ✓
-Aggregate ✓
-
-Execution complete
-Runtime: 0.42s
-
+| Layer                 | Purpose                                         |
+| --------------------- | ----------------------------------------------- |
+| 🧠 Pattern Cognition  | Structural understanding and intent recognition |
+| 🔀 Runtime Routing    | Intelligent execution direction                 |
+| ⚡ Execution Reactor   | Signature-aware workload execution              |
+| 📡 Proof Layer        | Verification and measurable evidence            |
+| ♻️ Continuity Runtime | Runtime persistence and survivability           |
+| 🚀 Optimization Layer | Reuse and execution efficiency                  |
+| 🖥️ QBAIX Compute     | Commercial hybrid compute branch                |
 
 ---
-
-# 🧠 Architecture
+### ⚡ Execution Memory Reactor (MEE)
 
 <p align="center">
-<img src="docs/assets/svg/mos_architecture.svg" width="900">
+  <img src="docs/assets/SVG/03_Mandale-OS_Execution_Lifecycle_Reactor.svg" width="100%" alt="Execution Reactor">
 </p>
 
-M-OS is built as a layered runtime architecture.
+M-OS MEE (Execution Memory Reactor) is the **execution-proof branch** of the ecosystem.
 
-| Layer | Responsibility |
-|------|---------------|
-| PatternGraph | describes computation patterns |
-| Runtime | executes graph nodes |
-| Scheduler | determines execution order |
-| Adapter | connects runtime to hardware |
-| Backend | CPU / GPU / AI compute |
+It investigates whether runtime systems can remember structural workload patterns and route repeated execution toward reusable pathways.
+
+```text
+RUN → SIGNATURE → ROUTE → REUSE → PROVE
+```
+
+MEE explores:
+
+* 🧩 signature routing
+* 🧠 execution memory persistence
+* 🔁 structural reuse
+* 📡 proof-state transitions
+* 📊 measurable reuse evidence
+* ⚡ consequence-aware execution
 
 ---
-
-# 🧩 Pattern → Hardware Execution
+### 🕸️ Runtime Graph Intelligence
 
 <p align="center">
-<img src="docs/assets/svg/mos_pattern_to_hardware_execution_map.svg" width="900">
+  <img src="docs/assets/SVG/mandale_runtime_graphs.gif" width="100%" alt="Runtime Graph Intelligence">
 </p>
 
-M-OS does not schedule processes.
+Mandale-OS treats runtime graphs as a **system language**.
 
-Instead, it schedules **patterns of computation**.
+The graph layer investigates:
 
-The runtime analyzes the structure of a workload and routes execution to the most appropriate compute hardware:
-
-• CPU  
-• GPU  
-• AI accelerators  
-
-This enables flexible execution across heterogeneous compute environments.
+| Graph                    | Meaning               |
+| ------------------------ | --------------------- |
+| 🧠 Pattern Graph         | Intent recognition    |
+| 🔀 Routing Graph         | Execution pathways    |
+| 📡 Proof Graph           | Evidence movement     |
+| ♻️ Continuity Graph      | Runtime survivability |
+| 🖥️ Hybrid Compute Graph | QBAIX orchestration   |
 
 ---
-
-# 🔗 Pattern Graph Example
+### 🌌 Runtime Topology
 
 <p align="center">
-<img src="docs/assets/svg/mos_pattern_graph.svg" width="900">
+  <img src="docs/assets/SVG/08_Mandale-OS_Runtime_Topology_Graph.svg" width="100%" alt="Runtime Topology">
 </p>
 
-Example execution pattern:
+The topology layer visualizes how runtime systems evolve through:
 
-Transform → Search → Optimize → Simulate → Aggregate
+* intent
+* memory
+* routing
+* execution
+* proof
+* continuity
+* optimization
 
-Each stage becomes a node in the **PatternGraph**, allowing the runtime to schedule execution deterministically.
+rather than isolated stateless execution.
 
 ---
-
-# 🔬 Pattern State Transition Graph
+### 🏛️ Runtime Architecture
 
 <p align="center">
-<img src="docs/assets/svg/mos_pstg_pattern_execution_graph.svg" width="900">
+  <img src="docs/assets/SVG/02_Mandale-OS_Architectur.svg" width="100%" alt="Mandale-OS Architecture">
 </p>
 
-Execution inside M-OS moves through **pattern state transitions** rather than traditional process threads.
+Mandale-OS architecture connects:
 
-Each node represents a transformation of computational state that progresses toward a solution.
+```text
+Pattern Cognition
+        ↓
+Runtime Routing
+        ↓
+Execution Reactor
+        ↓
+Proof Intelligence
+        ↓
+Continuity Runtime
+        ↓
+Optimization Layer
+        ↓
+QBAIX Compute Branch
+```
 
 ---
+### 📊 Benchmark + Proof Layer
 
-# ⚙️ Execution Flow
+Mandale-OS includes measurable execution-proof experiments inherited from the original MEE branch.
+
+The benchmark layer investigates:
+
+* reuse detection
+* signature recall
+* persistence behavior
+* routing confidence
+* proof-state generation
+* structural execution similarity
+
+### Example measured surfaces
+
+| Signal                | Example    |
+| --------------------- | ---------- |
+| 🔁 Reuse Match        | 88–91%     |
+| 📡 Recall Stability   | High       |
+| ⚡ Saved Time          | Measurable |
+| 🧠 Routing Confidence | Stable     |
+| 📋 Failure Cases      | Documented |
+
+---
+## 🖥️ QBAIX Compute Branch
 
 <p align="center">
-<img src="docs/assets/svg/mos_execution_flow.svg" width="900">
+  <img src="docs/assets/SVG/qbaix_architecture_motion.gif" width="100%" alt="QBAIX Compute">
 </p>
 
-Runtime pipeline:
+QBAIX represents the **commercial hybrid-compute realization branch** connected to Mandale-OS runtime intelligence.
 
-PatternGraph  
-↓  
-Scheduler  
-↓  
-Runtime  
-↓  
-Adapter  
-↓  
-Backend Compute
+QBAIX focuses on:
+
+* AI-ready infrastructure
+* accelerator-aware execution
+* runtime-driven orchestration
+* CPU/GPU integration
+* hybrid compute systems
+* infrastructure-scale execution surfaces
+
+### Relationship
+
+```text
+Mandale-OS = Runtime Intelligence Layer
+
+QBAIX = Compute Realization Layer
+```
 
 ---
-
-# 🔀 Workload Routing
+### 🎛️ Visual Runtime Surface
 
 <p align="center">
-<img src="docs/assets/svg/mos_workload_routing_diagram.svg" width="900">
+  <img src="docs/assets/SVG/05_Mandale-OS_Runtime_Graphs.svg" width="100%" alt="Runtime Graph Surface">
 </p>
 
-The runtime analyzes incoming workloads and determines where they should execute.
+The visual ecosystem explores runtime systems as:
 
-Routing decisions depend on the **structure of the pattern graph**, not just static hardware configuration.
-
----
-
-# ⏱ Execution Timeline
-
-<p align="center">
-<img src="docs/assets/svg/mos_timeline.svg" width="900">
-</p>
-
-This timeline illustrates how multiple pattern nodes are executed across runtime stages.
+* reactor civilizations
+* execution nervous systems
+* topology networks
+* runtime constellations
+* continuity-aware infrastructure
+* proof-routing surfaces
 
 ---
+### 🧪 Interactive Demo Surface
 
-# 📂 Project Structure
+```text
+demo/Mandale-OS-demo.html
+```
 
+The demo surface combines:
 
-mos-runtime
+* 🌌 ecosystem visualization
+* 🧠 runtime doctrine
+* 🕸️ topology graphs
+* ⚡ execution lifecycle surfaces
+* 🖥️ QBAIX compute mapping
+* 📡 proof-routing concepts
+
+---
+### 🗂️ Repository Structure
+
+```bash
+mos_repo_runtime/
 │
-├ core/
-│ ├ pattern_graph
-│ ├ runtime
-│ └ scheduler
+├── benchmarks/
+├── demo/
+├── docs/
+│   ├── assets/
+│   │   └── SVG/
+│   │       ├── *.svg
+│   │       ├── *.gif
+│   │
+│   ├── architecture.md
+│   ├── adapter_api.md
+│   ├── pstg_model.md
+│   └── ...
 │
-├ adapters/
-│ ├ cpu
-│ ├ opencl
-│ └ ai
+├── examples/
+├── mos/
+├── reports/
+├── research/
+├── tests/
 │
-├ examples/
-├ docs/
-│ └ assets/svg
-│
-└ cli/
+├── README.md
+├── requirements.txt
+└── pyproject.toml
+```
 
+---
+### 🔭 Relation to Broader Ecosystem
+
+```text
+Mandale-OS
+    ↓
+Pattern Runtime
+    ↓
+Execution Memory Reactor
+    ↓
+Proof Intelligence
+    ↓
+Continuity Runtime
+    ↓
+QBAIX Hybrid Compute
+```
+
+---
+## ❌ What this is NOT
+
+Mandale-OS is NOT:
+
+* a Windows/Linux replacement
+* a finished operating system
+* a production scheduler
+* a finalized AI runtime
+* a benchmark claim against enterprise systems
+
+This repository is a **runtime research ecosystem**.
 
 ---
 
-# 🔍 Why Pattern-Based Runtime
+## ✅ What this IS
 
-Traditional compute systems are:
+Mandale-OS IS:
 
-• imperative  
-• hardware-specific  
-• difficult to reproduce  
-
-M-OS introduces:
-
-• pattern-driven execution  
-• deterministic runtime graphs  
-• portable compute routing  
-
-This model works well for:
-
-• AI pipelines  
-• HPC workflows  
-• optimization engines  
-• simulation systems
+* 🧠 a runtime intelligence research surface
+* ⚡ a pattern-routing ecosystem
+* 🔁 an execution-memory exploration system
+* 📡 a proof-runtime architecture
+* ♻️ a continuity-aware runtime direction
+* 🖥️ a hybrid compute orchestration concept
+* 🌌 a visual runtime civilization
 
 ---
 
-# 🗺 Roadmap
+# 👨‍💻 Research Identity
 
-Current stage
+## Raaj Mandale
 
+Founder & Systems Architect
+Eranest Technoware Pvt Ltd
 
-v0 — Pattern Runtime Core
+### Research Domains
 
+* Mandale-OS
+* QBAIX
+* XPADI
+* Runtime Systems
+* Survivability Infrastructure
+* Execution Intelligence
+* Hybrid Compute Architecture
 
-Next stages
+---
+### 🔗 Research Links
 
-
-v1 — Distributed scheduler
-v2 — GPU execution backend
-v3 — AI runtime adapters
-v4 — Hybrid compute orchestration
-
+| Surface  | Link                                     |
+| -------- | ---------------------------------------- |
+| GitHub   | https://github.com/raajmandale           |
+| ORCID    | https://orcid.org/0009-0005-9810-1655    |
+| Wikidata | https://www.wikidata.org/wiki/Q139570902 |
+| OpenAlex | https://openalex.org/A5127026877         |
+| Zenodo   | https://zenodo.org/communities/qbaix     |
 
 ---
 
-# 📊 Status
+## 📚 Citation
 
-Research prototype.  
-Architecture baseline locked under **M-OS v0**.
-
----
-
-# 👤 Author
-
-Raaj Mandale  
-Founder — ERANEST Technoware Pvt Ltd
-
----
-
-# 📄 License
-
-MIT License
-
----
-
-# 📚 Citation
-
-If you use M-OS in research:
-
-
-@software{mandale_mos_runtime_2026,
-author = {Raaj Mandale},
-title = {M-OS: Pattern Runtime for Hybrid Compute},
-year = {2026},
-url = {https://github.com/raajmandale/mos-runtime}
-,
-version = {v0.1}
+```bibtex
+@software{mandale_runtime_ecosystem_2026,
+  author = {Raaj Mandale},
+  title = {Mandale-OS Runtime Ecosystem},
+  year = {2026},
+  url = {https://github.com/raajmandale},
+  version = {Research Runtime Surface}
 }
+```
+
+---
+# 📜 License
+
+MIT

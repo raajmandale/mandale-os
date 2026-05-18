@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mandale-OS — Runtime Intelligence Ecosystem</title>
+  <meta name="description" content="Mandale-OS runtime intelligence ecosystem: pattern cognition, execution reactor, proof, continuity, optimization, QBAIX hybrid compute branch.">
+
+  <style>
+    :root {
+      --bg: #02060d;
+      --panel: rgba(7, 20, 37, 0.72);
+      --blue: #00d8ff;
+      --orange: #ff7a18;
+      --text: #f7fbff;
+      --muted: #9eb9d2;
+      --line: rgba(0, 216, 255, 0.22);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 45% 7%, rgba(0,216,255,.16), transparent 34%),
+        radial-gradient(circle at 75% 45%, rgba(255,122,24,.12), transparent 36%),
+        linear-gradient(180deg, #02060d, #06111f 45%, #02060d);
+      color: var(--text);
+      font-family: Inter, Segoe UI, Arial, sans-serif;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .grid {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .10;
+      background-image:
+        linear-gradient(rgba(120,200,255,.42) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(120,200,255,.42) 1px, transparent 1px);
+      background-size: 120px 120px;
+      z-index: 0;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(18px);
+      background: rgba(2,6,13,.78);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner {
+      max-width: 1320px;
+      margin: auto;
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      font-weight: 950;
+      letter-spacing: -.6px;
+      font-size: 20px;
+    }
+
+    .brand span { color: var(--blue); }
+
+    .nav-links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      font-size: 12px;
+      color: #aad1ff;
+      font-weight: 800;
+      letter-spacing: .7px;
+      text-transform: uppercase;
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 1;
+    }
+
+    section {
+      max-width: 1320px;
+      margin: auto;
+      padding: 70px 22px;
+      border-bottom: 1px solid rgba(0,216,255,.10);
+    }
+
+    .hero {
+      min-height: 92vh;
+      display: grid;
+      grid-template-columns: .92fr 1.08fr;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .kicker {
+      font-size: 12px;
+      letter-spacing: 3px;
+      color: #82cfff;
+      font-weight: 950;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 76px;
+      line-height: .93;
+      margin: 18px 0;
+      letter-spacing: -3.5px;
+    }
+
+    h2 {
+      font-size: 46px;
+      line-height: 1;
+      margin: 0 0 16px;
+      letter-spacing: -1.7px;
+    }
+
+    h3 {
+      margin: 0 0 10px;
+      font-size: 21px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.58;
+      color: var(--muted);
+    }
+
+    .accent {
+      background: linear-gradient(90deg, var(--blue), var(--orange));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .visual {
+      border-radius: 30px;
+      overflow: hidden;
+      border: 1px solid rgba(0,216,255,.28);
+      background: rgba(5,18,34,.72);
+      box-shadow: 0 0 70px rgba(0,216,255,.12), inset 0 0 60px rgba(255,122,24,.06);
+    }
+
+    .btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .btn {
+      border: 1px solid rgba(0,216,255,.36);
+      background: rgba(0,216,255,.08);
+      padding: 13px 17px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 900;
+      transition: .22s ease;
+    }
+
+    .btn:nth-child(even) {
+      border-color: rgba(255,122,24,.45);
+      background: rgba(255,122,24,.08);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 28px rgba(0,216,255,.18);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 26px;
+    }
+
+    .card {
+      padding: 24px;
+      border-radius: 24px;
+      background: var(--panel);
+      border: 1px solid rgba(0,216,255,.20);
+    }
+
+    .card.orange {
+      border-color: rgba(255,122,24,.28);
+      background: linear-gradient(135deg, rgba(255,122,24,.095), rgba(7,20,37,.72));
+    }
+
+    .card p {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .badge {
+      display: inline-flex;
+      margin-top: 14px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(0,216,255,.28);
+      font-size: 11px;
+      font-weight: 900;
+      color: #9feeff;
+      letter-spacing: .8px;
+      text-transform: uppercase;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 18px;
+      border: 1px solid rgba(0,216,255,.18);
+      background: rgba(5,18,34,.55);
+    }
+
+    .table th,
+    .table td {
+      padding: 14px 16px;
+      text-align: left;
+      border-bottom: 1px solid rgba(0,216,255,.10);
+      vertical-align: top;
+    }
+
+    .table th {
+      color: #cceeff;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .table td {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .repo-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .repo {
+      padding: 22px;
+      border-radius: 22px;
+      background: rgba(5,18,34,.72);
+      border: 1px solid rgba(0,216,255,.22);
+      transition: .22s ease;
+    }
+
+    .repo:hover {
+      transform: translateY(-3px);
+      border-color: rgba(255,122,24,.55);
+      box-shadow: 0 0 36px rgba(255,122,24,.13);
+    }
+
+    .repo strong {
+      display: block;
+      font-size: 19px;
+      margin-bottom: 7px;
+    }
+
+    .repo span {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .asset-wall {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .asset {
+      margin: 0;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid rgba(0,216,255,.22);
+      background: rgba(0,0,0,.25);
+    }
+
+    .asset figcaption {
+      padding: 13px 16px;
+      color: #aad1ff;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .8px;
+      text-transform: uppercase;
+    }
+
+    .code {
+      white-space: pre-wrap;
+      background: #030b14;
+      border: 1px solid rgba(0,216,255,.18);
+      border-radius: 18px;
+      padding: 18px;
+      overflow: auto;
+      color: #cceeff;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 44px 22px;
+      color: #83acd0;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    @media (max-width: 900px) {
+      .hero, .split { grid-template-columns: 1fr; }
+      h1 { font-size: 48px; }
+      h2 { font-size: 34px; }
+      .cards, .repo-grid, .asset-wall { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="brand"><span>Mandale</span>-OS</div>
+      <div class="nav-links">
+        <a href="#doctrine">Doctrine</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#graphs">Graphs</a>
+        <a href="#qbaix">QBAIX</a>
+        <a href="#repos">Repos</a>
+        <a href="#identity">Identity</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrap">
+
+    <section class="hero" id="top">
+      <div>
+        <div class="kicker">Root Runtime Ecosystem • 2050 Glass Reactor Edition</div>
+        <h1>Mandale-OS<br><span class="accent">Runtime Intelligence Civilization</span></h1>
+        <p>
+          Mandale-OS is the root ecosystem for pattern cognition, execution routing,
+          proof intelligence, continuity-aware runtime behavior, optimization, and QBAIX hybrid compute realization.
+        </p>
+        <p>
+          It is not a consumer operating system. It is a future runtime intelligence layer:
+          <b>understand → route → execute → prove → continue → evolve.</b>
+        </p>
+
+        <div class="btns">
+          <a class="btn" href="https://github.com/raajmandale/mos-runtime">Root Runtime</a>
+          <a class="btn" href="https://github.com/raajmandale/mos-mee-execution-reactor">Execution Reactor</a>
+          <a class="btn" href="https://github.com/raajmandale/mos-mee-execution-reactor/tree/ppe-v2">Proof Branch</a>
+          <a class="btn" href="https://github.com/raajmandale/XLifelineAI">Continuity Runtime</a>
+          <a class="btn" href="https://github.com/raajmandale/mos-parameter-golf">Optimization Lab</a>
+        </div>
+      </div>
+
+      <div class="visual">
+        <img src="../docs/assets/SVG/mandale_os_banner.gif" alt="Mandale-OS master runtime hero">
+      </div>
+    </section>
+
+    <section id="doctrine">
+      <h2>Core Doctrine</h2>
+      <p>
+        Mandale-OS treats execution as a living runtime process, not isolated task completion.
+        The ecosystem asks whether future systems can recognize execution patterns, route intelligently,
+        reuse memory, prove behavior, and continue after disruption.
+      </p>
+
+      <div class="cards">
+        <div class="card"><h3>Pattern Cognition</h3><p>Recognize structure and intent before execution begins.</p><span class="badge">Blue Domain</span></div>
+        <div class="card orange"><h3>Execution Reactor</h3><p>Convert routing decisions into proof-aware runtime action.</p><span class="badge">Orange Domain</span></div>
+        <div class="card"><h3>Continuity Runtime</h3><p>Keep state, memory, and recovery paths alive under failure.</p><span class="badge">Survival Layer</span></div>
+        <div class="card orange"><h3>Proof Intelligence</h3><p>Make execution emit evidence, verification, and authority state.</p><span class="badge">Proof Layer</span></div>
+        <div class="card"><h3>Optimization Lab</h3><p>Reduce context, compress routes, and improve runtime efficiency.</p><span class="badge">Efficiency Layer</span></div>
+        <div class="card orange"><h3>QBAIX Branch</h3><p>Commercial hybrid compute realization around the runtime intelligence root.</p><span class="badge">Compute Branch</span></div>
+      </div>
+    </section>
+
+    <section id="architecture" class="split">
+      <div>
+        <h2>Architecture + Ecosystem</h2>
+        <p>
+          Mandale-OS is the root. QBAIX is not the root; it is the commercial AI-ready hybrid compute branch.
+          M-OS runtime research, execution memory, proof, continuity, and optimization all orbit one architecture.
+        </p>
+
+        <div class="code">Mandale-OS Root
+├── Pattern Cognition
+├── Runtime Topology
+├── Execution Reactor
+├── Proof &amp; Verification
+├── Continuity Runtime
+├── Optimization Lab
+└── QBAIX Hybrid Compute Branch</div>
+      </div>
+
+      <div class="visual">
+        <img src="../docs/assets/SVG/02_Mandale-OS_Architectur.svg" alt="Mandale-OS architecture ecosystem">
+      </div>
+    </section>
+
+    <section id="graphs" class="split">
+      <div class="visual">
+        <img src="../docs/assets/SVG/05_Mandale-OS_Runtime_Graphs.svg" alt="Mandale-OS runtime graphs">
+      </div>
+
+      <div>
+        <h2>Runtime Graph Intelligence</h2>
+        <p>
+          The graph is the system language: intent becomes pattern, pattern becomes memory,
+          memory guides routing, routing drives execution, execution emits proof, and proof feeds continuity.
+        </p>
+
+        <table class="table">
+          <tr><th>Graph</th><th>Meaning</th></tr>
+          <tr><td>Pattern Graph</td><td>Structural recognition and intent classification.</td></tr>
+          <tr><td>Execution Topology</td><td>Action pathways and execution pressure.</td></tr>
+          <tr><td>Proof Routing Graph</td><td>Verification and evidence movement.</td></tr>
+          <tr><td>Continuity Graph</td><td>Recovery, persistence, and runtime survival.</td></tr>
+          <tr><td>Hybrid Compute Graph</td><td>QBAIX compute branch and hardware realization.</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="split">
+      <div>
+        <h2>Runtime Topology</h2>
+        <p>
+          The topology view explains the Mandale-OS execution nervous system:
+          intent, pattern, memory, route, execution, proof, continuity, optimization, and QBAIX compute branch.
+        </p>
+      </div>
+
+      <div class="visual">
+        <img src="../docs/assets/SVG/08_Mandale-OS_Runtime_Topology_Graph.svg" alt="Mandale-OS runtime topology graph">
+      </div>
+    </section>
+
+    <section class="split">
+      <div class="visual">
+        <img src="../docs/assets/SVG/03_Mandale-OS_Execution_Lifecycle_Reactor.svg" alt="Mandale-OS execution lifecycle reactor">
+      </div>
+
+      <div>
+        <h2>Execution Lifecycle</h2>
+        <p>
+          Mandale-OS connects execution to memory and proof.
+          Execution does not always start from zero; known patterns can be routed, reused, proven, and evolved.
+        </p>
+
+        <div class="code">RUN → DETECT → ROUTE → REUSE → PROVE → VERIFY → CONTINUE → EVOLVE</div>
+      </div>
+    </section>
+
+    <section id="qbaix" class="split">
+      <div>
+        <h2>QBAIX Compute Branch</h2>
+        <p>
+          QBAIX represents the commercial hybrid compute realization layer around Mandale-OS.
+          It connects runtime intelligence to CPU, GPU, accelerator, memory, storage, and AI-ready infrastructure systems.
+        </p>
+
+        <table class="table">
+          <tr><th>Layer</th><th>Role</th></tr>
+          <tr><td>Mandale-OS Runtime</td><td>Decision, routing, proof, continuity, optimization.</td></tr>
+          <tr><td>QBAIX Fabric</td><td>Commercial AI-ready hybrid compute realization.</td></tr>
+          <tr><td>Hardware Layer</td><td>CPU, GPU, accelerator, storage, memory.</td></tr>
+        </table>
+      </div>
+
+      <div class="visual">
+        <img src="../docs/assets/SVG/06_QBAIX_Hybrid_Compute.svg" alt="QBAIX hybrid compute branch">
+      </div>
+    </section>
+
+    <section>
+      <h2>Visual Asset Wall</h2>
+      <p>All assets live under <b>/docs/assets/svg</b>. This page references the canonical repo-safe paths.</p>
+
+      <div class="asset-wall">
+        <figure class="asset">
+          <img src="../docs/assets/SVG/04_Mandale-OS_Ecosystem.svg" alt="Ecosystem">
+          <figcaption>Ecosystem Constellation</figcaption>
+        </figure>
+
+        <figure class="asset">
+          <img src="../docs/assets/SVG/07_Mandale-OS_Concept_Moto.svg" alt="Concept Moto">
+          <figcaption>Concept + Motto</figcaption>
+        </figure>
+
+        <figure class="asset">
+          <img src="../docs/assets/SVG/mandale_runtime_graphs.gif" alt="Runtime Graph GIF">
+          <figcaption>Runtime Graph Motion</figcaption>
+        </figure>
+
+        <figure class="asset">
+          <img src="../docs/assets/SVG/qbaix_architecture_motion.gif" alt="QBAIX Motion">
+          <figcaption>QBAIX Architecture Motion</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="repos">
+      <h2>Repository Ecosystem</h2>
+      <p>Mandale-OS is the root surface; these repositories become specialized branches of one runtime intelligence ecosystem.</p>
+
+      <div class="repo-grid">
+        <a class="repo" href="https://github.com/raajmandale/mos-runtime"><strong>mos-runtime</strong><span>Mandale-OS root runtime direction and master ecosystem surface.</span></a>
+        <a class="repo" href="https://github.com/raajmandale/mos-mee-execution-reactor"><strong>mos-mee-execution-reactor</strong><span>Execution Memory Reactor: RUN → DETECT → ROUTE → REUSE → PROVE.</span></a>
+        <a class="repo" href="https://github.com/raajmandale/mos-mee-execution-reactor/tree/ppe-v2"><strong>ppe-v2</strong><span>Proof and verification branch for runtime governance.</span></a>
+        <a class="repo" href="https://github.com/raajmandale/XLifelineAI"><strong>XLifelineAI</strong><span>Failure-native continuity and resilient runtime execution.</span></a>
+        <a class="repo" href="https://github.com/raajmandale/mos-parameter-golf"><strong>mos-parameter-golf</strong><span>Optimization, context reduction, compact runtime intelligence.</span></a>
+        <a class="repo" href="https://raajmandale.in"><strong>Raaj Mandale</strong><span>Founder identity surface for systems architecture and research ecosystem.</span></a>
+      </div>
+    </section>
+
+    <section id="identity">
+      <h2>Founder + Research Identity</h2>
+      <p>
+        Mandale-OS is part of Raaj Mandale’s broader systems-architecture research ecosystem spanning
+        runtime systems, QBAIX hybrid compute, XPADI survivability, and execution-governance concepts.
+      </p>
+
+      <div class="repo-grid">
+        <a class="repo" href="https://github.com/raajmandale"><strong>GitHub</strong><span>github.com/raajmandale</span></a>
+        <a class="repo" href="https://orcid.org/0009-0005-9810-1655"><strong>ORCID</strong><span>0009-0005-9810-1655</span></a>
+        <a class="repo" href="https://www.wikidata.org/wiki/Q139570902"><strong>Wikidata</strong><span>Q139570902</span></a>
+        <a class="repo" href="https://openalex.org/A5127026877"><strong>OpenAlex</strong><span>A5127026877</span></a>
+        <a class="repo" href="https://doi.org/10.5281/zenodo.18798774"><strong>QBAIX DOI</strong><span>Zenodo research record</span></a>
+        <a class="repo" href="https://doi.org/10.5281/zenodo.19500143"><strong>XPADI DOI</strong><span>Zenodo research record</span></a>
+      </div>
+    </section>
+
+    <div class="footer">
+      Mandale-OS • Intelligence is the infrastructure • Execution is the purpose • Continuity is the promise
+    </div>
+
+  </div>
+</body>
+</html>

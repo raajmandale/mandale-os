@@ -1,0 +1,135 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+  <radialGradient id="bg" cx="50%" cy="46%" r="84%">
+    <stop offset="0%" stop-color="#123457"/>
+    <stop offset="46%" stop-color="#071322"/>
+    <stop offset="100%" stop-color="#02050b"/>
+  </radialGradient>
+
+  <radialGradient id="coreBlue" cx="50%" cy="45%" r="70%">
+    <stop offset="0%" stop-color="#1af4ff" stop-opacity=".85"/>
+    <stop offset="38%" stop-color="#008cff" stop-opacity=".36"/>
+    <stop offset="100%" stop-color="#02101d" stop-opacity=".15"/>
+  </radialGradient>
+
+  <radialGradient id="coreOrange" cx="50%" cy="45%" r="70%">
+    <stop offset="0%" stop-color="#ffb04a" stop-opacity=".86"/>
+    <stop offset="45%" stop-color="#ff7418" stop-opacity=".38"/>
+    <stop offset="100%" stop-color="#1a0802" stop-opacity=".08"/>
+  </radialGradient>
+
+  <linearGradient id="bo" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#00e5ff"/>
+    <stop offset="46%" stop-color="#148cff"/>
+    <stop offset="100%" stop-color="#ff7a18"/>
+  </linearGradient>
+
+  <linearGradient id="glassBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#9deeff" stop-opacity=".22"/>
+    <stop offset="48%" stop-color="#1f87ff" stop-opacity=".08"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity=".03"/>
+  </linearGradient>
+
+  <linearGradient id="glassOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#ff9d3c" stop-opacity=".24"/>
+    <stop offset="50%" stop-color="#ff7418" stop-opacity=".09"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity=".03"/>
+  </linearGradient>
+
+  <filter id="blueGlow" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="8" result="b"/>
+    <feColorMatrix in="b" type="matrix" values="0 0 0 0 0  0 0 0 0 .82  0 0 0 0 1  0 0 0 .95 0"/>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+  <filter id="orangeGlow" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="8" result="b"/>
+    <feColorMatrix in="b" type="matrix" values="0 0 0 0 1  0 0 0 0 .44  0 0 0 0 .04  0 0 0 .95 0"/>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+  <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+    <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#000000" flood-opacity=".55"/>
+  </filter>
+
+  <style>
+    .font{font-family:Inter,Segoe UI,Arial,sans-serif}
+    .title{font-size:64px;font-weight:900;letter-spacing:-2px;fill:#f8fbff}
+    .subtitle{font-size:22px;font-weight:550;fill:#a9cfff}
+    .micro{font-size:13px;font-weight:800;letter-spacing:2.5px;fill:#7fa8c9}
+    .label{font-size:24px;font-weight:850;fill:#f7fbff}
+    .small{font-size:16px;font-weight:600;fill:#b2c5d6}
+    .glassB{fill:url(#glassBlue);stroke:rgba(40,210,255,.44);stroke-width:1.5;filter:url(#softShadow)}
+    .glassO{fill:url(#glassOrange);stroke:rgba(255,122,24,.48);stroke-width:1.5;filter:url(#softShadow)}
+    .planeB{fill:rgba(10,34,58,.42);stroke:#00d4ff;stroke-width:1.7;filter:url(#blueGlow)}
+    .planeO{fill:rgba(44,24,12,.34);stroke:#ff7a18;stroke-width:1.7;filter:url(#orangeGlow)}
+    .routeB{fill:none;stroke:#00d4ff;stroke-width:2.7;stroke-linecap:round;stroke-dasharray:12 18;animation:dashB 5.8s linear infinite;filter:url(#blueGlow)}
+    .routeO{fill:none;stroke:#ff7a18;stroke-width:2.7;stroke-linecap:round;stroke-dasharray:14 18;animation:dashO 6.4s linear infinite;filter:url(#orangeGlow)}
+    .thinB{fill:none;stroke:#00d4ff;stroke-width:1.1;opacity:.42}
+    .thinO{fill:none;stroke:#ff7a18;stroke-width:1.1;opacity:.42}
+    .orbitB{fill:none;stroke:#00d4ff;stroke-width:1.25;stroke-dasharray:6 13;opacity:.50}
+    .orbitO{fill:none;stroke:#ff7a18;stroke-width:1.25;stroke-dasharray:8 16;opacity:.50}
+    .pulse{animation:pulse 2.8s ease-in-out infinite}
+    .spin{animation:spin 34s linear infinite;transform-origin:center}
+    .spinR{animation:spinR 58s linear infinite;transform-origin:center}
+    .floatA{animation:floatA 7s ease-in-out infinite}
+    .floatB{animation:floatB 8.5s ease-in-out infinite}
+    .shimmer{animation:shimmer 6s ease-in-out infinite}
+    @keyframes dashB{to{stroke-dashoffset:-210}}
+    @keyframes dashO{to{stroke-dashoffset:220}}
+    @keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}
+    @keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+    @keyframes spinR{from{transform:rotate(360deg)}to{transform:rotate(0deg)}}
+    @keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+    @keyframes floatB{0%,100%{transform:translateY(0)}50%{transform:translateY(12px)}}
+    @keyframes shimmer{0%,100%{opacity:.45}50%{opacity:.95}}
+  </style>
+</defs>
+
+<rect width="1920" height="1080" fill="url(#bg)"/>
+<g opacity=".12">
+  <path d="M0 180H1920 M0 360H1920 M0 540H1920 M0 720H1920 M0 900H1920" stroke="#74bdf2"/>
+  <path d="M240 0V1080 M480 0V1080 M720 0V1080 M960 0V1080 M1200 0V1080 M1440 0V1080 M1680 0V1080" stroke="#74bdf2"/>
+</g>
+<g opacity=".16">
+  <path d="M260 880 C540 690,760 630,960 540 C1160 450,1380 390,1660 210" stroke="#00d4ff" stroke-width="1"/>
+  <path d="M260 210 C540 390,760 450,960 540 C1160 630,1380 690,1660 880" stroke="#ff7a18" stroke-width="1"/>
+</g>
+
+<text x="82" y="105" class="font title">MANDALE-OS</text>
+<text x="84" y="156" class="font subtitle">Future runtime intelligence civilization — blue intelligence governing orange execution energy.</text>
+<text x="84" y="194" class="font micro">2050 GLASS REACTOR EDITION • ROOT RUNTIME ECOSYSTEM</text>
+
+<g transform="translate(960 555)">
+  <g class="spin"><ellipse rx="690" ry="270" class="orbitB"/></g>
+  <g class="spinR"><ellipse rx="790" ry="340" class="orbitO" transform="rotate(-8)"/></g>
+  <g class="spin"><ellipse rx="510" ry="210" class="orbitB" transform="rotate(11)"/></g>
+
+  <ellipse rx="640" ry="255" fill="rgba(0,212,255,.05)" stroke="#00d4ff" stroke-width="2" filter="url(#blueGlow)"/>
+  <ellipse rx="480" ry="185" fill="rgba(255,122,24,.045)" stroke="#ff7a18" stroke-width="2" filter="url(#orangeGlow)"/>
+  <circle r="240" fill="url(#coreBlue)" stroke="#00d4ff" stroke-width="2.3" filter="url(#blueGlow)"/>
+  <circle r="164" fill="rgba(255,122,24,.06)" stroke="#ff7a18" stroke-width="2.1" filter="url(#orangeGlow)"/>
+  <circle r="88" fill="#102844" stroke="url(#bo)" stroke-width="4"/>
+  <text y="-8" text-anchor="middle" class="font label" style="font-size:36px">RUNTIME CORE</text>
+  <text y="32" text-anchor="middle" class="font micro">PATTERN • EXECUTION • PROOF • CONTINUITY</text>
+
+  <g class="shimmer">
+    <path d="M-520 -35 C-320 -130,-150 90,0 -10 C190 -130,340 95,520 -25" class="thinB"/>
+    <path d="M-510 40 C-310 145,-150 -70,0 25 C190 130,330 -85,510 45" class="thinO"/>
+  </g>
+</g>
+
+<g class="floatA"><rect x="125" y="330" width="385" height="135" rx="28" class="glassB"/><text x="165" y="388" class="font label">Pattern Intelligence</text><text x="165" y="423" class="font small">Understand before execution.</text><text x="165" y="448" class="font micro">BLUE = INTELLIGENCE</text></g>
+<g class="floatB"><rect x="1410" y="330" width="385" height="135" rx="28" class="glassO"/><text x="1450" y="388" class="font label">Execution Reactor</text><text x="1450" y="423" class="font small">Action becomes proof.</text><text x="1450" y="448" class="font micro">ORANGE = EXECUTION</text></g>
+<g class="floatB"><rect x="180" y="770" width="410" height="135" rx="28" class="glassB"/><text x="220" y="828" class="font label">Continuity Runtime</text><text x="220" y="863" class="font small">Failure routes back into motion.</text></g>
+<g class="floatA"><rect x="1330" y="770" width="410" height="135" rx="28" class="glassO"/><text x="1370" y="828" class="font label">Proof Layer</text><text x="1370" y="863" class="font small">Every execution emits evidence.</text></g>
+<path d="M510 397 C665 420,760 500,850 535" class="routeB"/>
+<path d="M1410 397 C1255 420,1160 500,1070 535" class="routeO"/>
+<path d="M590 835 C740 740,820 640,895 585" class="routeO"/>
+<path d="M1330 835 C1180 740,1100 640,1025 585" class="routeB"/>
+<g filter="url(#blueGlow)"><circle cx="510" cy="397" r="9" fill="#00d4ff" class="pulse"/><circle cx="590" cy="835" r="9" fill="#00d4ff" class="pulse"/></g>
+<g filter="url(#orangeGlow)"><circle cx="1410" cy="397" r="9" fill="#ff7a18" class="pulse"/><circle cx="1330" cy="835" r="9" fill="#ff7a18" class="pulse"/></g>
+<text x="82" y="1015" class="font micro">SIGNATURE DOCTRINE: BLUE INTELLIGENCE CONTROLS ORANGE EXECUTION ENERGY</text>
+
+</svg>

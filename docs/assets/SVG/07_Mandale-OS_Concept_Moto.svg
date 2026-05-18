@@ -1,0 +1,113 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+  <radialGradient id="bg" cx="50%" cy="46%" r="84%">
+    <stop offset="0%" stop-color="#123457"/>
+    <stop offset="46%" stop-color="#071322"/>
+    <stop offset="100%" stop-color="#02050b"/>
+  </radialGradient>
+
+  <radialGradient id="coreBlue" cx="50%" cy="45%" r="70%">
+    <stop offset="0%" stop-color="#1af4ff" stop-opacity=".85"/>
+    <stop offset="38%" stop-color="#008cff" stop-opacity=".36"/>
+    <stop offset="100%" stop-color="#02101d" stop-opacity=".15"/>
+  </radialGradient>
+
+  <radialGradient id="coreOrange" cx="50%" cy="45%" r="70%">
+    <stop offset="0%" stop-color="#ffb04a" stop-opacity=".86"/>
+    <stop offset="45%" stop-color="#ff7418" stop-opacity=".38"/>
+    <stop offset="100%" stop-color="#1a0802" stop-opacity=".08"/>
+  </radialGradient>
+
+  <linearGradient id="bo" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#00e5ff"/>
+    <stop offset="46%" stop-color="#148cff"/>
+    <stop offset="100%" stop-color="#ff7a18"/>
+  </linearGradient>
+
+  <linearGradient id="glassBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#9deeff" stop-opacity=".22"/>
+    <stop offset="48%" stop-color="#1f87ff" stop-opacity=".08"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity=".03"/>
+  </linearGradient>
+
+  <linearGradient id="glassOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#ff9d3c" stop-opacity=".24"/>
+    <stop offset="50%" stop-color="#ff7418" stop-opacity=".09"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity=".03"/>
+  </linearGradient>
+
+  <filter id="blueGlow" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="8" result="b"/>
+    <feColorMatrix in="b" type="matrix" values="0 0 0 0 0  0 0 0 0 .82  0 0 0 0 1  0 0 0 .95 0"/>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+  <filter id="orangeGlow" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="8" result="b"/>
+    <feColorMatrix in="b" type="matrix" values="0 0 0 0 1  0 0 0 0 .44  0 0 0 0 .04  0 0 0 .95 0"/>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+  <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+    <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#000000" flood-opacity=".55"/>
+  </filter>
+
+  <style>
+    .font{font-family:Inter,Segoe UI,Arial,sans-serif}
+    .title{font-size:64px;font-weight:900;letter-spacing:-2px;fill:#f8fbff}
+    .subtitle{font-size:22px;font-weight:550;fill:#a9cfff}
+    .micro{font-size:13px;font-weight:800;letter-spacing:2.5px;fill:#7fa8c9}
+    .label{font-size:24px;font-weight:850;fill:#f7fbff}
+    .small{font-size:16px;font-weight:600;fill:#b2c5d6}
+    .glassB{fill:url(#glassBlue);stroke:rgba(40,210,255,.44);stroke-width:1.5;filter:url(#softShadow)}
+    .glassO{fill:url(#glassOrange);stroke:rgba(255,122,24,.48);stroke-width:1.5;filter:url(#softShadow)}
+    .planeB{fill:rgba(10,34,58,.42);stroke:#00d4ff;stroke-width:1.7;filter:url(#blueGlow)}
+    .planeO{fill:rgba(44,24,12,.34);stroke:#ff7a18;stroke-width:1.7;filter:url(#orangeGlow)}
+    .routeB{fill:none;stroke:#00d4ff;stroke-width:2.7;stroke-linecap:round;stroke-dasharray:12 18;animation:dashB 5.8s linear infinite;filter:url(#blueGlow)}
+    .routeO{fill:none;stroke:#ff7a18;stroke-width:2.7;stroke-linecap:round;stroke-dasharray:14 18;animation:dashO 6.4s linear infinite;filter:url(#orangeGlow)}
+    .thinB{fill:none;stroke:#00d4ff;stroke-width:1.1;opacity:.42}
+    .thinO{fill:none;stroke:#ff7a18;stroke-width:1.1;opacity:.42}
+    .orbitB{fill:none;stroke:#00d4ff;stroke-width:1.25;stroke-dasharray:6 13;opacity:.50}
+    .orbitO{fill:none;stroke:#ff7a18;stroke-width:1.25;stroke-dasharray:8 16;opacity:.50}
+    .pulse{animation:pulse 2.8s ease-in-out infinite}
+    .spin{animation:spin 34s linear infinite;transform-origin:center}
+    .spinR{animation:spinR 58s linear infinite;transform-origin:center}
+    .floatA{animation:floatA 7s ease-in-out infinite}
+    .floatB{animation:floatB 8.5s ease-in-out infinite}
+    .shimmer{animation:shimmer 6s ease-in-out infinite}
+    @keyframes dashB{to{stroke-dashoffset:-210}}
+    @keyframes dashO{to{stroke-dashoffset:220}}
+    @keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}
+    @keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+    @keyframes spinR{from{transform:rotate(360deg)}to{transform:rotate(0deg)}}
+    @keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+    @keyframes floatB{0%,100%{transform:translateY(0)}50%{transform:translateY(12px)}}
+    @keyframes shimmer{0%,100%{opacity:.45}50%{opacity:.95}}
+  </style>
+</defs>
+
+<rect width="1920" height="1080" fill="url(#bg)"/>
+<g opacity=".12">
+  <path d="M0 180H1920 M0 360H1920 M0 540H1920 M0 720H1920 M0 900H1920" stroke="#74bdf2"/>
+  <path d="M240 0V1080 M480 0V1080 M720 0V1080 M960 0V1080 M1200 0V1080 M1440 0V1080 M1680 0V1080" stroke="#74bdf2"/>
+</g>
+<g opacity=".16">
+  <path d="M260 880 C540 690,760 630,960 540 C1160 450,1380 390,1660 210" stroke="#00d4ff" stroke-width="1"/>
+  <path d="M260 210 C540 390,760 450,960 540 C1160 630,1380 690,1660 880" stroke="#ff7a18" stroke-width="1"/>
+</g>
+
+<text x="82" y="105" class="font title">Mandale-OS Concept</text>
+<text x="84" y="156" class="font subtitle">A runtime intelligence layer that remembers, routes, proves, and continues execution.</text>
+<text x="84" y="194" class="font micro">MOTO • UNDERSTAND → EXECUTE → PROVE → CONTINUE</text>
+
+<g transform="translate(960 560)">
+  <circle r="260" fill="url(#coreBlue)" stroke="#00d4ff" stroke-width="2.4" filter="url(#blueGlow)"/>
+  <circle r="190" fill="none" stroke="#ff7a18" stroke-width="2.2" filter="url(#orangeGlow)"/>
+  <circle r="118" fill="rgba(7,21,34,.9)" stroke="url(#bo)" stroke-width="3"/>
+  <text y="-36" text-anchor="middle" class="font label" style="font-size:34px">Runtime Intelligence</text>
+  <text y="3" text-anchor="middle" class="font small">Not a consumer OS.</text>
+  <text y="34" text-anchor="middle" class="font micro">A FUTURE EXECUTION SUBSTRATE</text>
+</g>
+<path d="M420 310 C690 345,690 525,960 560" class="routeB"/><g class="floatA"><rect x="305" y="262" width="230" height="96" rx="24" class="glassB"/><text x="420" y="317" text-anchor="middle" class="font label" style="font-size:20px">Understand</text></g><path d="M680 210 C820 295,820 475,960 560" class="routeB"/><g class="floatA"><rect x="565" y="162" width="230" height="96" rx="24" class="glassB"/><text x="680" y="217" text-anchor="middle" class="font label" style="font-size:20px">Route</text></g><path d="M1240 210 C1100 295,1100 475,960 560" class="routeO"/><g class="floatA"><rect x="1125" y="162" width="230" height="96" rx="24" class="glassO"/><text x="1240" y="217" text-anchor="middle" class="font label" style="font-size:20px">Execute</text></g><path d="M1500 310 C1230 345,1230 525,960 560" class="routeO"/><g class="floatA"><rect x="1385" y="262" width="230" height="96" rx="24" class="glassO"/><text x="1500" y="317" text-anchor="middle" class="font label" style="font-size:20px">Prove</text></g><path d="M1500 760 C1230 570,1230 750,960 560" class="routeB"/><g class="floatA"><rect x="1385" y="712" width="230" height="96" rx="24" class="glassB"/><text x="1500" y="767" text-anchor="middle" class="font label" style="font-size:20px">Recover</text></g><path d="M420 760 C690 570,690 750,960 560" class="routeB"/><g class="floatA"><rect x="305" y="712" width="230" height="96" rx="24" class="glassB"/><text x="420" y="767" text-anchor="middle" class="font label" style="font-size:20px">Optimize</text></g><text x="82" y="1015" class="font micro">MANDATORY POSITIONING: M-OS IS RUNTIME INTELLIGENCE, NOT WINDOWS/LINUX REPLACEMENT</text>
+</svg>
